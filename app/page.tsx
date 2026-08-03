@@ -80,48 +80,72 @@ export default function Home() {
               Is This YOU?
             </h2>
 
-            {/* 3 Problems in the same row */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 items-start w-full">
+            {/* 3 Problems in the same row - Perfectly aligned elements */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 items-stretch w-full">
               {/* Item 01 */}
-              <div className="flex flex-col items-center text-center gap-4">
-                <div className="select-none pointer-events-none watermark-number text-[56px] md:text-[120px] leading-none tracking-tighter -mb-2">
-                  01
+              <div className="flex flex-col items-center text-center justify-between gap-4 h-full">
+                <div className="flex flex-col items-center w-full">
+                  <div className="select-none pointer-events-none watermark-number text-[56px] md:text-[120px] leading-none tracking-tighter -mb-2">
+                    01
+                  </div>
+                  <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
+                    <h3 className="question-headline text-[22px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
+                      Leads Not The Right Fit?
+                    </h3>
+                  </div>
                 </div>
-                <h3 className="question-headline text-[22px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
-                  Leads Not The Right Fit?
-                </h3>
-                <div className="w-16 h-1.5 bg-[#711111] rounded-full my-1" />
-                <p className="font-body-lg text-[14px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
-                  You get leads who were never going to buy
-                </p>
+
+                <div className="w-16 h-1.5 bg-[#711111] rounded-full my-2 flex-shrink-0" />
+
+                <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
+                  <p className="font-body-lg text-[14px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
+                    You get leads who were never going to buy
+                  </p>
+                </div>
               </div>
 
               {/* Item 02 */}
-              <div className="flex flex-col items-center text-center gap-4">
-                <div className="select-none pointer-events-none watermark-number text-[56px] md:text-[120px] leading-none tracking-tighter -mb-2">
-                  02
+              <div className="flex flex-col items-center text-center justify-between gap-4 h-full">
+                <div className="flex flex-col items-center w-full">
+                  <div className="select-none pointer-events-none watermark-number text-[56px] md:text-[120px] leading-none tracking-tighter -mb-2">
+                    02
+                  </div>
+                  <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
+                    <h3 className="question-headline text-[22px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
+                      Not Getting Leads Consistently?
+                    </h3>
+                  </div>
                 </div>
-                <h3 className="question-headline text-[22px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
-                  Not Getting Leads Consistently?
-                </h3>
-                <div className="w-16 h-1.5 bg-[#711111] rounded-full my-1" />
-                <p className="font-body-lg text-[14px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
-                  Even when they are the right fit, there&apos;s just not enough of them consistently coming in
-                </p>
+
+                <div className="w-16 h-1.5 bg-[#711111] rounded-full my-2 flex-shrink-0" />
+
+                <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
+                  <p className="font-body-lg text-[14px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
+                    Even when they are the right fit, there&apos;s just not enough of them consistently coming in
+                  </p>
+                </div>
               </div>
 
               {/* Item 03 */}
-              <div className="flex flex-col items-center text-center gap-4">
-                <div className="select-none pointer-events-none watermark-number text-[56px] md:text-[120px] leading-none tracking-tighter -mb-2">
-                  03
+              <div className="flex flex-col items-center text-center justify-between gap-4 h-full">
+                <div className="flex flex-col items-center w-full">
+                  <div className="select-none pointer-events-none watermark-number text-[56px] md:text-[120px] leading-none tracking-tighter -mb-2">
+                    03
+                  </div>
+                  <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
+                    <h3 className="question-headline text-[22px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
+                      Leads Not Turning Into Customers?
+                    </h3>
+                  </div>
                 </div>
-                <h3 className="question-headline text-[22px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
-                  Leads Not Turning Into Customers?
-                </h3>
-                <div className="w-16 h-1.5 bg-[#711111] rounded-full my-1" />
-                <p className="font-body-lg text-[14px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
-                  Leads come in, but they never become paying clients
-                </p>
+
+                <div className="w-16 h-1.5 bg-[#711111] rounded-full my-2 flex-shrink-0" />
+
+                <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
+                  <p className="font-body-lg text-[14px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
+                    Leads come in, but they never become paying clients
+                  </p>
+                </div>
               </div>
             </div>
           </div>
