@@ -10,6 +10,7 @@ export default function QuestionnairePage() {
   const [page, setPage] = useState<1 | 2 | 3>(1);
   const [qIndex, setQIndex] = useState<number>(0); // 0 to 5 for the 6 questions
   const [errorMsg, setErrorMsg] = useState<string>("");
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   // Page 1 state
   const [name, setName] = useState<string>("");
@@ -35,7 +36,7 @@ export default function QuestionnairePage() {
     setQIndex(0);
   };
 
-  const handleQNext = () => {
+  const handleQNext = async () => {
     setErrorMsg("");
     const currentAnswer = [
       whatWeSell,
@@ -54,7 +55,29 @@ export default function QuestionnairePage() {
     if (qIndex < 5) {
       setQIndex(qIndex + 1);
     } else {
-      setPage(3);
+      setIsSubmitting(true);
+      try {
+        await fetch('/api/submit-lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name,
+            businessName,
+            email,
+            whatWeSell,
+            clientSource,
+            monthlyClients,
+            websiteUrl,
+            nextAction,
+            followUpSpeed,
+          }),
+        });
+      } catch (err) {
+        console.error("Submission failed:", err);
+      } finally {
+        setIsSubmitting(false);
+        setPage(3);
+      }
     }
   };
 
@@ -366,10 +389,11 @@ export default function QuestionnairePage() {
                   <button
                     type="button"
                     onClick={handleQNext}
+                    disabled={isSubmitting}
                     style={{ padding: "12px 24px" }}
-                    className="override-white bg-[#0C0C0C] font-black text-xs sm:text-sm uppercase tracking-wider rounded-full hover:opacity-85 transition-all inline-flex items-center justify-center gap-2 cursor-pointer shadow-none"
+                    className="override-white bg-[#0C0C0C] font-black text-xs sm:text-sm uppercase tracking-wider rounded-full hover:opacity-85 transition-all inline-flex items-center justify-center gap-2 cursor-pointer shadow-none disabled:opacity-50"
                   >
-                    <span>{qIndex < 5 ? "Next" : "Submit"}</span>
+                    <span>{isSubmitting ? "Submitting..." : qIndex < 5 ? "Next" : "Submit"}</span>
                     <ArrowRight className="w-4 h-4 text-white stroke-[2.5]" />
                   </button>
                 </div>
