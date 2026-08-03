@@ -38,7 +38,7 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <Link
               className="hidden md:inline-flex btn-on-dark"
-              href="/questionnaire"
+              href="/form"
             >
               Get Your Free 4-week Plan
             </Link>
@@ -62,7 +62,7 @@ export default function Home() {
           </p>
           <Link
             className="btn-solid-white group"
-            href="/questionnaire"
+            href="/form"
           >
             Get Your Free 4-week Plan
             <ArrowRight className="ml-2.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -223,7 +223,7 @@ export default function Home() {
             </p>
             <Link
               className="btn-on-light group shadow-[0_15px_35px_rgba(113,17,17,0.25)] hover:shadow-[0_20px_45px_rgba(113,17,17,0.4)] transition-all duration-300"
-              href="/questionnaire"
+              href="/form"
             >
               Get Yours
               <ArrowRight className="ml-2.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
