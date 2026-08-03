@@ -54,7 +54,7 @@ export default function Home() {
         {/* ───────── 2. Hero (Minimal Design Kept) ───────── */}
         <section className="min-h-[95vh] md:min-h-[105vh] max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-start justify-start pt-44 md:pt-52 pb-36 md:pb-52 text-left relative z-10">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#711111]/25 rounded-full blur-[140px] pointer-events-none -z-10"></div>
-          <h1 className="font-display-lg-mobile md:font-display-lg text-[48px] md:text-[80px] font-black text-on-surface mb-8 max-w-4xl tracking-tighter leading-tight">
+          <h1 className="hero-headline font-display-lg-mobile md:font-display-lg text-[48px] md:text-[80px] font-extrabold text-on-surface mb-8 max-w-4xl tracking-tighter leading-tight">
             Turn Strangers Into Paying Customers
           </h1>
           <p className="font-body-lg text-[14px] md:text-[18px] leading-relaxed text-on-surface-variant max-w-2xl mb-10">
@@ -90,7 +90,7 @@ export default function Home() {
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
                     <h3 className="question-headline text-[22px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
-                      Leads Not The Right Fit?
+                      Leads Not The Right <br /> Fit?
                     </h3>
                   </div>
                 </div>

@@ -3,8 +3,13 @@ import { fontStackSansNotch, fontStackSansText } from "../font-library";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "REVON SOLUTIONS - Turn Strangers Into Paying Customers",
+  title: "Customer Acquisition System by REVON",
   description: "Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
