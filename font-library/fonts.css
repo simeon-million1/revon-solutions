@@ -1,0 +1,60 @@
+/* ================================================================== */
+/*  FONT LIBRARY - Pure CSS & Web Font Imports                         */
+/* ================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&family=Space+Grotesk:wght@400..700&display=swap');
+
+:root {
+  /* Headline Fonts */
+  --font-playfair-display: 'Playfair Display', Georgia, serif;
+  --font-anton: 'Anton', impact, sans-serif;
+  --font-google-sans-flex: 'Plus Jakarta Sans', 'Google Sans', sans-serif;
+  --font-stack-sans-notch: 'Space Grotesk', sans-serif;
+
+  /* Body Text Fonts */
+  --font-google-sans: 'Plus Jakarta Sans', 'Google Sans', sans-serif;
+  --font-pt-serif-caption: 'PT Serif', Georgia, serif;
+  --font-stack-sans-text: 'Space Grotesk', sans-serif;
+}
+
+/* ------------------------------------------------------------------ */
+/*  UTILITY CLASSES                                                   */
+/* ------------------------------------------------------------------ */
+
+/* Headlines */
+.font-playfair {
+  font-family: var(--font-playfair-display);
+  font-weight: 400;
+}
+
+.font-anton {
+  font-family: var(--font-google-sans-flex);
+  font-weight: 500;
+}
+
+.font-google-sans-flex {
+  font-family: var(--font-google-sans-flex);
+  font-weight: 500;
+}
+
+.font-stack-sans-notch {
+  font-family: var(--font-stack-sans-notch);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+/* Body Text */
+.font-google-sans {
+  font-family: var(--font-google-sans);
+  font-weight: 400;
+}
+
+.font-pt-serif-caption {
+  font-family: var(--font-pt-serif-caption);
+  font-weight: 400;
+}
+
+.font-stack-sans-text {
+  font-family: var(--font-stack-sans-text);
+  font-weight: 400;
+}

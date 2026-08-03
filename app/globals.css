@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Stack+Sans+Notch:wght@400;600;700;800;900&family=Stack+Sans+Text:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-anton: 'Anton', sans-serif;
+  --font-google-sans-flex: 'Plus Jakarta Sans', sans-serif;
+  --font-stack-sans-notch: 'Stack Sans Notch', sans-serif;
+  --font-stack-sans-text: 'Stack Sans Text', sans-serif;
+
+  --color-bg-main: #0C0C0C;
+  --color-text-main: #F0F3F5;
+  --color-accent-red: #711111;
+}
+
+html, body {
+  background-color: #0C0C0C !important;
+  color: #F0F3F5 !important;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari, Opera, and all WebKit browsers */
+*::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+* {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* 1. All Headlines & Subheadlines: Google Sans Flex (500 weight), Title Case (0.08em word spacing) */
+h2, h3, h4, h5, h6,
+.font-headline-lg, .font-headline-md, .font-display-lg, .font-display-lg-mobile, .font-headline, .font-display, .font-subheadline {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  letter-spacing: -0.06em !important;
+  word-spacing: 0.08em !important;
+  color: #F0F3F5 !important;
+}
+
+/* 2. Hero Headline Exception: Stack Sans Notch (700 font weight, tighter letter spacing) */
+.hero-headline,
+h1.hero-headline {
+  font-family: 'Stack Sans Notch', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.06em !important;
+  text-transform: uppercase !important;
+  color: #F0F3F5 !important;
+}
+
+/* 3. Brand Logo ('REVON SOLUTIONS') Exception: Stack Sans Notch (700 font weight, tighter letter spacing) */
+.brand-logo {
+  font-family: 'Stack Sans Notch', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.06em !important;
+  text-transform: uppercase !important;
+  color: #F0F3F5 !important;
+}
+
+/* 4. Question / Pain Point Headlines & Inverted Light Section Rules (High Contrast #0C0C0C) */
+.question-headline,
+h3.question-headline,
+.inverted-section,
+.inverted-section h1,
+.inverted-section h2,
+.inverted-section h3,
+.inverted-section h4,
+.inverted-section h5,
+.inverted-section h6,
+.inverted-section p,
+.inverted-section span.body-text,
+.inverted-section .question-headline {
+  color: #0C0C0C !important;
+}
+
+.inverted-section .text-primary-accent,
+.inverted-section span.text-primary-accent {
+  color: #711111 !important;
+}
+
+.inverted-section .watermark-number {
+  color: rgba(113, 17, 17, 0.08) !important;
+  font-family: 'Stack Sans Notch', sans-serif !important;
+  font-weight: 900 !important;
+}
+
+.inverted-section .icon-badge,
+.inverted-section .icon-badge * {
+  color: #FFFFFF !important;
+}
+
+/* ── Button: for dark backgrounds (white text + white border) ── */
+.btn-on-dark {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #F0F3F5;
+  border: 1.5px solid rgba(240, 243, 245, 0.6);
+  box-shadow: 0 0 20px rgba(113, 17, 17, 0.3);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-on-dark:hover {
+  background-color: #FFFFFF;
+  color: #0C0C0C;
+  border: 1.5px solid #0C0C0C;
+  box-shadow: 0 5px 30px rgba(113, 17, 17, 0.5);
+  transform: translateY(-2px);
+}
+
+/* ── Button: Solid white with black text (no border line) for Hero ── */
+.btn-solid-white {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  background-color: #FFFFFF;
+  color: #0C0C0C;
+  border: none;
+  box-shadow: 0 10px 30px rgba(113, 17, 17, 0.4);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-solid-white:hover {
+  background-color: #F0F3F5;
+  color: #0C0C0C;
+  box-shadow: 0 12px 35px rgba(113, 17, 17, 0.6);
+  transform: translateY(-2px);
+}
+
+/* ── Button: for light/white backgrounds (black text + black border) ── */
+.btn-on-light {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #0C0C0C;
+  border: 1.5px solid #0C0C0C;
+  box-shadow: 0 0 20px rgba(113, 17, 17, 0.15);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-on-light:hover {
+  background-color: #0C0C0C;
+  color: #FFFFFF;
+  border: 1.5px solid #0C0C0C;
+  box-shadow: 0 5px 30px rgba(113, 17, 17, 0.5);
+  transform: translateY(-2px);
+}
+
+/* 5. Body Text: Stack Sans Text & Color #F0F3F5 */
+body, p, li {
+  font-family: 'Stack Sans Text', sans-serif;
+  color: #F0F3F5;
+}
+
+@theme {
+    --color-on-background: #F0F3F5;
+    --color-on-surface: #F0F3F5;
+    --color-on-surface-variant: #F0F3F5;
+    --color-background: #0C0C0C;
+    --color-surface: #0C0C0C;
+    --color-surface-dim: #0C0C0C;
+    --color-surface-container-lowest: #0C0C0C;
+    --color-primary: #711111;
+    --color-primary-fixed: #711111;
+    --color-tertiary: #711111;
+    --color-outline: #711111;
+
+    --spacing-unit: 8px;
+    --spacing-margin-desktop: 40px;
+    --spacing-container-max: 100%;
+    --spacing-margin-mobile: 16px;
+    --spacing-gutter: 24px;
+    --spacing-section-gap: 64px;
+
+    --font-headline-lg: var(--font-stack-sans-notch);
+    --font-body-lg: var(--font-stack-sans-text);
+    --font-label-md: var(--font-stack-sans-text);
+    --font-button: var(--font-stack-sans-text);
+    --font-headline-lg-mobile: var(--font-stack-sans-notch);
+    --font-body-md: var(--font-stack-sans-text);
+    --font-headline-md: var(--font-stack-sans-notch);
+    --font-display-lg-mobile: var(--font-stack-sans-notch);
+    --font-display-lg: var(--font-stack-sans-notch);
+    --font-headline: var(--font-stack-sans-notch);
+    --font-display: var(--font-stack-sans-notch);
+    --font-body: var(--font-stack-sans-text);
+    --font-label: var(--font-stack-sans-text);
+    --font-subheadline: var(--font-stack-sans-text);
+
+    --text-headline-lg: 48px;
+    --text-headline-lg--line-height: 1.2;
+    --text-headline-lg--font-weight: 700;
+
+    --text-body-lg: 18px;
+    --text-body-lg--line-height: 1.6;
+    --text-body-lg--font-weight: 400;
+
+    --text-label-md: 14px;
+    --text-label-md--line-height: 1.2;
+    --text-label-md--letter-spacing: 0.1em;
+    --text-label-md--font-weight: 500;
+
+    --text-button: 16px;
+    --text-button--line-height: 1;
+    --text-button--letter-spacing: 0.05em;
+    --text-button--font-weight: 600;
+
+    --text-headline-lg-mobile: 32px;
+    --text-headline-lg-mobile--line-height: 1.2;
+    --text-headline-lg-mobile--font-weight: 700;
+
+    --text-body-md: 16px;
+    --text-body-md--line-height: 1.6;
+    --text-body-md--font-weight: 400;
+
+    --text-headline-md: 32px;
+    --text-headline-md--line-height: 1.3;
+    --text-headline-md--font-weight: 600;
+
+    --text-display-lg-mobile: 48px;
+    --text-display-lg-mobile--line-height: 1.1;
+    --text-display-lg-mobile--letter-spacing: -0.01em;
+    --text-display-lg-mobile--font-weight: 700;
+
+    --text-display-lg: 72px;
+    --text-display-lg--line-height: 1.1;
+    --text-display-lg--letter-spacing: -0.02em;
+    --text-display-lg--font-weight: 700;
+}
+
+@layer utilities {
+    .ghost-border {
+        border: 1px solid rgba(240, 243, 245, 0.25) !important;
+    }
+
+    .glass-panel {
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        border: 1px solid rgba(240, 243, 245, 0.25) !important;
+        box-shadow: none !important;
+    }
+
+    .glass-panel:hover {
+        background: transparent !important;
+        border: 1px solid rgba(240, 243, 245, 0.5) !important;
+        box-shadow: 0 0 25px rgba(113, 17, 17, 0.3) !important;
+    }
+
+    .primary-cta {
+        background-color: transparent !important;
+        color: #F0F3F5 !important;
+        border: 1.5px solid rgba(240, 243, 245, 0.6) !important;
+        box-shadow: 0 0 20px rgba(113, 17, 17, 0.3) !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .primary-cta:hover {
+        background-color: rgba(240, 243, 245, 0.1) !important;
+        color: #ffffff !important;
+        border: 1.5px solid #ffffff !important;
+        box-shadow: 0 0 30px rgba(113, 17, 17, 0.6) !important;
+        transform: translateY(-2px) !important;
+    }
+
+    .secondary-cta {
+        border: 1.5px solid #F0F3F5 !important;
+        color: #F0F3F5 !important;
+        transition: all 0.3s ease;
+    }
+
+    .secondary-cta:hover {
+        background: rgba(240, 243, 245, 0.1);
+        border-color: #ffffff !important;
+    }
+
+    .btn-primary {
+        background-color: #F0F3F5 !important;
+        color: #0C0C0C !important;
+        border: 1.5px solid rgba(240, 243, 245, 0.8) !important;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #e2e8f0;
+        transform: translateX(2px);
+    }
+
+    .bg-grid {
+        background-size: 50px 50px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+        -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+    }
+
+    .timeline-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 24px;
+        width: 1px;
+        background: linear-gradient(to bottom, rgba(245, 249, 251, 0.4), rgba(245, 249, 251, 0.05));
+        z-index: 0;
+    }
+
+    @media (min-width: 768px) {
+        .timeline-line {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+/* Inverted Section CTA Button Overrides */
+.inverted-section a.primary-cta,
+.inverted-section button,
+.inverted-section .primary-cta,
+.inverted-section .font-button,
+a.primary-cta-inverted,
+.primary-cta-inverted {
+    background-color: transparent !important;
+    color: #0C0C0C !important;
+    border: 1.5px solid #0C0C0C !important;
+    box-shadow: 0 0 25px rgba(113, 17, 17, 0.3) !important;
+}
+
+.inverted-section a.primary-cta:hover,
+.inverted-section button:hover,
+.inverted-section .primary-cta:hover,
+.inverted-section .font-button:hover,
+a.primary-cta-inverted:hover,
+.primary-cta-inverted:hover {
+    background-color: #0C0C0C !important;
+    color: #FFFFFF !important;
+    border: 1.5px solid #0C0C0C !important;
+    box-shadow: 0 5px 30px rgba(113, 17, 17, 0.6) !important;
+    transform: translateY(-2px) !important;
+}
+
+body {
+    zoom: 0.9;
+}
