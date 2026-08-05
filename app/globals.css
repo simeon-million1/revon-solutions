@@ -379,3 +379,33 @@ a.primary-cta-inverted:hover,
 body {
   zoom: 0.9;
 }
+
+/* Ensure utility hidden class cannot be overridden by custom component display rules */
+.hidden {
+  display: none !important;
+}
+
+/* ==========================================================================
+   Screen Optimization Skill: Breakpoints & Scaling Rules
+   ========================================================================== */
+
+/* 1. Desktop (baseline — no changes) */
+@media (min-width: 1025px) {
+  :root {
+    --scale: 1;
+  }
+}
+
+/* 2. Tablet — Portrait & Landscape (scale down 15% from desktop baseline) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  :root {
+    --scale: 0.85;
+  }
+}
+
+/* 3. Mobile — Portrait & Landscape (scale down 20% from desktop baseline) */
+@media (max-width: 767px) {
+  :root {
+    --scale: 0.80;
+  }
+}

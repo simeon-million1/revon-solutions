@@ -21,7 +21,7 @@ export default function Home() {
         <div className="relative flex justify-between items-center max-w-[1350px] mx-auto px-6 md:px-12 h-24">
           <div className="flex items-center">
             <Link
-              className="brand-logo flex items-center gap-3 font-headline-md text-[26px] font-black tracking-tighter text-on-surface"
+              className="brand-logo flex items-center gap-2.5 md:gap-3 font-headline-md text-[20px] md:text-[22px] lg:text-[26px] font-black tracking-tighter text-on-surface whitespace-nowrap"
               href="/"
             >
               <Image
@@ -29,39 +29,36 @@ export default function Home() {
                 alt="REVON SOLUTIONS Logo"
                 width={38}
                 height={38}
-                className="h-[38px] w-auto brightness-0 invert"
+                className="h-[28px] md:h-[32px] lg:h-[38px] w-auto brightness-0 invert"
               />
               <span>REVON SOLUTIONS</span>
             </Link>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <Link
-              className="hidden md:inline-flex btn-on-dark"
+              className="btn-on-dark"
               href="/form"
             >
               Get Your Free 4-week Plan
             </Link>
-            <button className="md:hidden text-on-surface">
-              <Menu size={28} />
-            </button>
           </div>
         </div>
       </header>
 
       <main className="flex-grow relative overflow-hidden">
 
-        {/* ───────── 2. Hero (Minimal Design Kept) ───────── */}
-        <section className="min-h-[95vh] md:min-h-[105vh] max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-start justify-start pt-44 md:pt-52 pb-36 md:pb-52 text-left relative z-10">
+        {/* ───────── 2. Hero (Vertically Centered & Responsive) ───────── */}
+        <section className="min-h-[92vh] md:min-h-[95vh] lg:min-h-[105vh] max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-start justify-center pt-28 pb-20 md:py-36 lg:py-48 text-left relative z-10">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#711111]/25 rounded-full blur-[140px] pointer-events-none -z-10"></div>
-          <h1 className="hero-headline font-display-lg-mobile md:font-display-lg text-[48px] md:text-[80px] font-extrabold text-on-surface mb-8 max-w-4xl tracking-tighter leading-tight">
+          <h1 className="hero-headline font-display-lg-mobile md:font-display text-[42px] md:text-[66px] lg:text-[80px] font-extrabold text-on-surface mb-6 md:mb-8 max-w-4xl tracking-tighter leading-[1.08] md:leading-tight">
             Turn Strangers Into Paying Customers
           </h1>
-          <p className="font-body-lg text-[14px] md:text-[18px] leading-relaxed text-on-surface-variant max-w-2xl mb-10">
+          <p className="font-body-lg text-[15px] md:text-[16px] lg:text-[18px] leading-relaxed text-on-surface-variant max-w-2xl mb-8 md:mb-10">
             Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.
           </p>
           <Link
-            className="btn-solid-white group"
+            className="btn-solid-white group min-h-[46px]"
             href="/form"
           >
             Get Your Free 4-week Plan
@@ -152,16 +149,16 @@ export default function Home() {
         </section>
 
         {/* ───────── 4. Solution / Value Prop ───────── */}
-        <section id="how-it-works" className="max-w-[1350px] mx-auto px-6 md:px-12 py-24 md:py-32 relative z-10">
+        <section id="how-it-works" className="max-w-[1350px] mx-auto px-6 md:px-12 py-16 md:py-24 lg:py-32 relative z-10">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#711111]/10 rounded-full blur-[160px] pointer-events-none -z-10"></div>
           
-          <div className="text-center max-w-4xl mx-auto mb-16 md:mb-24">
-            <h2 className="font-display-lg-mobile md:font-display-lg text-[38px] md:text-[70px] font-black text-on-surface mb-6 tracking-tighter leading-tight">
+          <div className="text-center max-w-4xl mx-auto mb-10 md:mb-16 lg:mb-24">
+            <h2 className="font-display-lg-mobile md:font-display-lg text-[28px] md:text-[48px] lg:text-[70px] font-black text-on-surface mb-4 md:mb-6 tracking-tighter leading-tight">
               Here&apos;s How we FIX that
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 w-full mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10 w-full mx-auto">
             {[
               {
                 number: "01",
@@ -181,25 +178,25 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="glass-panel ghost-border p-10 md:p-12 rounded-3xl flex flex-col justify-between relative overflow-hidden group hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(113,17,17,0.15)] transition-all duration-500 border border-[#F0F3F5]/15 bg-gradient-to-b from-white/[0.03] to-transparent"
+                className="glass-panel ghost-border p-6 md:p-8 lg:p-12 rounded-2xl lg:rounded-3xl flex flex-col justify-between relative overflow-hidden group hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(113,17,17,0.15)] transition-all duration-500 border border-[#F0F3F5]/15 bg-gradient-to-b from-white/[0.03] to-transparent"
               >
                 <div className="absolute -top-24 -right-24 w-48 h-48 rounded-full bg-[#711111]/20 blur-[50px] group-hover:bg-[#711111]/40 transition-all duration-500 pointer-events-none" />
 
-                <div className="flex flex-col gap-6 relative z-10">
+                <div className="flex flex-col gap-3 md:gap-4 lg:gap-6 relative z-10">
                   <div className="flex items-center justify-start">
-                    <span className="font-headline-md text-[44px] md:text-[54px] font-black text-on-surface/30 group-hover:text-white transition-colors duration-500 select-none tracking-tighter leading-none drop-shadow-[0_0_12px_rgba(113,17,17,0.3)]">
+                    <span className="font-headline-md text-[28px] md:text-[42px] lg:text-[54px] font-black text-on-surface/30 group-hover:text-white transition-colors duration-500 select-none tracking-tighter leading-none drop-shadow-[0_0_12px_rgba(113,17,17,0.3)]">
                       {item.number}
                     </span>
                   </div>
 
-                  <div className="flex flex-col gap-4">
-                    <h3 className="font-headline-md text-[28px] md:text-[32px] font-bold text-on-surface tracking-tight group-hover:text-white transition-colors duration-300">
+                  <div className="flex flex-col gap-2 md:gap-3 lg:gap-4">
+                    <h3 className="font-headline-md text-[20px] md:text-[25px] lg:text-[32px] font-bold text-on-surface tracking-tight group-hover:text-white transition-colors duration-300">
                       {item.title}
                     </h3>
-                    <div className="w-12 h-1 bg-[#711111] rounded-full group-hover:w-24 transition-all duration-500" />
+                    <div className="w-8 md:w-10 lg:w-12 h-0.5 lg:h-1 bg-[#711111] rounded-full group-hover:w-24 transition-all duration-500" />
                   </div>
 
-                  <p className="font-body-lg text-[14px] md:text-[18px] text-on-surface-variant leading-relaxed opacity-90">
+                  <p className="font-body-lg text-[13px] md:text-[15px] lg:text-[18px] text-on-surface-variant leading-relaxed opacity-90">
                     {item.description}
                   </p>
                 </div>
