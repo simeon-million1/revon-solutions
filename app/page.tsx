@@ -49,12 +49,12 @@ export default function Home() {
       <main className="flex-grow relative overflow-hidden">
 
         {/* ───────── 2. Hero (Vertically Centered & Responsive) ───────── */}
-        <section className="min-h-[92vh] md:min-h-[95vh] lg:min-h-[105vh] max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-start justify-center pt-28 pb-20 md:py-36 lg:py-48 text-left relative z-10">
+        <section className="min-h-[92vh] md:min-h-[95vh] lg:min-h-[105vh] max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-start justify-center pt-20 pb-36 md:py-36 lg:py-48 text-left relative z-10">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#711111]/25 rounded-full blur-[140px] pointer-events-none -z-10"></div>
-          <h1 className="hero-headline font-display-lg-mobile md:font-display text-[42px] md:text-[66px] lg:text-[80px] font-extrabold text-on-surface mb-6 md:mb-8 max-w-4xl tracking-tighter leading-[1.08] md:leading-tight">
+          <h1 className="hero-headline font-display-lg-mobile md:font-display text-[54px] md:text-[66px] lg:text-[80px] font-extrabold text-on-surface mb-6 md:mb-8 max-w-4xl tracking-tighter leading-[1.08] md:leading-tight">
             Turn Strangers Into Paying Customers
           </h1>
-          <p className="font-body-lg text-[15px] md:text-[16px] lg:text-[18px] leading-relaxed text-on-surface-variant max-w-2xl mb-8 md:mb-10">
+          <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-on-surface-variant max-w-2xl mb-8 md:mb-10">
             Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.
           </p>
           <Link
@@ -73,7 +73,7 @@ export default function Home() {
           <div className="absolute bottom-[10%] left-[-5%] w-[600px] h-[600px] rounded-full bg-[#711111]/[0.05] blur-[150px] pointer-events-none -z-0" />
 
           <div className="max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-center relative z-10">
-            <h2 className="font-display-lg-mobile md:font-display-lg text-[38px] md:text-[70px] font-black text-[#0C0C0C] mb-16 md:mb-24 text-center tracking-tighter leading-tight">
+            <h2 className="font-display-lg-mobile md:font-display-lg text-[42px] md:text-[70px] font-black text-[#0C0C0C] mb-16 md:mb-24 text-center tracking-tighter leading-tight">
               Is This YOU?
             </h2>
 
@@ -86,7 +86,7 @@ export default function Home() {
                     01
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
-                    <h3 className="question-headline text-[22px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
+                    <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
                       Leads Not The Right <br /> Fit?
                     </h3>
                   </div>
@@ -95,7 +95,7 @@ export default function Home() {
                 <div className="w-16 h-1.5 bg-[#711111] rounded-full my-2 flex-shrink-0" />
 
                 <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
-                  <p className="font-body-lg text-[14px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
+                  <p className="font-body-lg text-[17px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
                     You get leads who were never going to buy
                   </p>
                 </div>
@@ -108,7 +108,7 @@ export default function Home() {
                     02
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
-                    <h3 className="question-headline text-[22px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
+                    <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
                       Not Getting Leads Consistently?
                     </h3>
                   </div>
@@ -117,7 +117,7 @@ export default function Home() {
                 <div className="w-16 h-1.5 bg-[#711111] rounded-full my-2 flex-shrink-0" />
 
                 <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
-                  <p className="font-body-lg text-[14px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
+                  <p className="font-body-lg text-[17px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
                     Even when they are the right fit, there&apos;s just not enough of them consistently coming in
                   </p>
                 </div>
@@ -130,7 +130,7 @@ export default function Home() {
                     03
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
-                    <h3 className="question-headline text-[22px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
+                    <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
                       Leads Not Turning Into Customers?
                     </h3>
                   </div>
@@ -139,7 +139,7 @@ export default function Home() {
                 <div className="w-16 h-1.5 bg-[#711111] rounded-full my-2 flex-shrink-0" />
 
                 <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
-                  <p className="font-body-lg text-[14px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
+                  <p className="font-body-lg text-[17px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
                     Leads come in, but they never become paying clients
                   </p>
                 </div>
@@ -153,7 +153,7 @@ export default function Home() {
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#711111]/10 rounded-full blur-[160px] pointer-events-none -z-10"></div>
           
           <div className="text-center max-w-4xl mx-auto mb-10 md:mb-16 lg:mb-24">
-            <h2 className="font-display-lg-mobile md:font-display-lg text-[28px] md:text-[48px] lg:text-[70px] font-black text-on-surface mb-4 md:mb-6 tracking-tighter leading-tight">
+            <h2 className="font-display-lg-mobile md:font-display-lg text-[42px] md:text-[48px] lg:text-[70px] font-black text-on-surface mb-4 md:mb-6 tracking-tighter leading-tight">
               Here&apos;s How we FIX that
             </h2>
           </div>
@@ -190,13 +190,13 @@ export default function Home() {
                   </div>
 
                   <div className="flex flex-col gap-2 md:gap-3 lg:gap-4">
-                    <h3 className="font-headline-md text-[20px] md:text-[25px] lg:text-[32px] font-bold text-on-surface tracking-tight group-hover:text-white transition-colors duration-300">
+                    <h3 className="font-headline-md text-[24px] md:text-[25px] lg:text-[32px] font-bold text-on-surface tracking-tight group-hover:text-white transition-colors duration-300">
                       {item.title}
                     </h3>
                     <div className="w-8 md:w-10 lg:w-12 h-0.5 lg:h-1 bg-[#711111] rounded-full group-hover:w-24 transition-all duration-500" />
                   </div>
 
-                  <p className="font-body-lg text-[13px] md:text-[15px] lg:text-[18px] text-on-surface-variant leading-relaxed opacity-90">
+                  <p className="font-body-lg text-[17px] md:text-[15px] lg:text-[18px] text-on-surface-variant leading-relaxed opacity-90">
                     {item.description}
                   </p>
                 </div>
@@ -212,10 +212,10 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] rounded-full bg-[#711111]/[0.06] blur-[160px] pointer-events-none -z-0" />
           
           <div className="max-w-[1350px] mx-auto text-center px-6 md:px-12 flex flex-col items-center justify-center z-10">
-            <h2 className="font-display-lg-mobile md:font-display-lg text-[38px] md:text-[70px] font-black text-[#0C0C0C] mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
+            <h2 className="font-display-lg-mobile md:font-display-lg text-[42px] md:text-[70px] font-black text-[#0C0C0C] mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
               Start With A Free 4-week Plan
             </h2>
-            <p className="mb-8 text-[14px] md:text-[18px] leading-relaxed font-medium max-w-xl text-[#0C0C0C]">
+            <p className="mb-8 text-[17px] md:text-[18px] leading-relaxed font-medium max-w-xl text-[#0C0C0C]">
               Fill out a form (takes 5 min) and receive a <strong>READY TO USE</strong> personalized plan.
             </p>
             <Link
@@ -233,15 +233,15 @@ export default function Home() {
       <footer className="w-full bg-background dark:bg-background border-t border-white/10 mt-auto relative z-10">
         <div className="max-w-[1350px] mx-auto px-6 md:px-12 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Far Left: Big Logo & REVON SOLUTIONS where container starts */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5 md:gap-3">
             <Image
               src="/logo.svg"
               alt="REVON SOLUTIONS Logo"
-              width={36}
+              width={38}
               height={36}
-              className="h-[36px] w-auto brightness-0 invert"
+              className="h-[28px] md:h-[36px] w-auto brightness-0 invert"
             />
-            <span className="brand-logo font-headline-md text-[24px] font-black tracking-tighter text-on-surface">
+            <span className="brand-logo font-headline-md text-[20px] md:text-[24px] font-black tracking-tighter text-on-surface whitespace-nowrap">
               REVON SOLUTIONS
             </span>
           </div>
@@ -249,13 +249,13 @@ export default function Home() {
           {/* Center: Terms of Service & Privacy Policy */}
           <nav className="flex flex-wrap justify-center gap-8">
             <Link
-              className="font-label-md text-[13px] text-on-surface-variant hover:text-white transition-colors duration-300 uppercase tracking-widest font-semibold"
+              className="font-label-md text-[14px] md:text-[13px] text-on-surface-variant hover:text-white transition-colors duration-300 uppercase tracking-widest font-semibold"
               href="#"
             >
               Terms of Service
             </Link>
             <Link
-              className="font-label-md text-[13px] text-on-surface-variant hover:text-white transition-colors duration-300 uppercase tracking-widest font-semibold"
+              className="font-label-md text-[14px] md:text-[13px] text-on-surface-variant hover:text-white transition-colors duration-300 uppercase tracking-widest font-semibold"
               href="#"
             >
               Privacy Policy
@@ -263,7 +263,7 @@ export default function Home() {
           </nav>
 
           {/* Far Right: Copyright on right side of container */}
-          <div className="font-body-md text-[13px] text-on-surface-variant opacity-60 font-medium">
+          <div className="font-body-md text-[14px] md:text-[13px] text-on-surface-variant opacity-60 font-medium">
             © 2026 REVON SOLUTIONS. All rights reserved.
           </div>
         </div>
