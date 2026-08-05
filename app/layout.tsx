@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "REVON SOLUTIONS | Customer Acquisition System",
   description: "Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.",
   applicationName: "REVON SOLUTIONS",
+  alternates: {
+    canonical: "https://revonsolutions.com",
+  },
   openGraph: {
     title: "REVON SOLUTIONS | Customer Acquisition System",
     description: "Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.",
