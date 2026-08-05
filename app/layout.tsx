@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     siteName: "REVON SOLUTIONS",
     images: [
       {
+        url: "/favicon-search.svg",
+        width: 800,
+        height: 800,
+        alt: "REVON SOLUTIONS Search Logo",
+      },
+      {
         url: "/logo.svg",
         width: 800,
         height: 800,
@@ -25,10 +31,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/favicon-browser.svg", type: "image/svg+xml" },
       { url: "/favicon.svg", type: "image/svg+xml" },
     ],
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    shortcut: "/favicon-browser.svg",
+    apple: [
+      { url: "/favicon-search.svg", type: "image/svg+xml" },
+    ],
   },
 };
 
@@ -55,7 +64,7 @@ export default function RootLayout({
         "@id": "https://revonsolutions.com/#organization",
         "name": "REVON SOLUTIONS",
         "url": "https://revonsolutions.com/",
-        "logo": "https://revonsolutions.com/logo.svg",
+        "logo": "https://revonsolutions.com/favicon-search.svg",
       },
     ],
   };
