@@ -4,10 +4,29 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://revonsolutions.com"),
-  title: "Customer Acquisition System by REVON",
+  title: "REVON SOLUTIONS | Customer Acquisition System",
   description: "Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.",
+  applicationName: "REVON SOLUTIONS",
+  openGraph: {
+    title: "REVON SOLUTIONS | Customer Acquisition System",
+    description: "Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.",
+    url: "https://revonsolutions.com",
+    siteName: "REVON SOLUTIONS",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 800,
+        height: 800,
+        alt: "REVON SOLUTIONS Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
     shortcut: "/favicon.svg",
     apple: "/favicon.svg",
   },
@@ -18,12 +37,43 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://revonsolutions.com/#website",
+        "url": "https://revonsolutions.com/",
+        "name": "REVON SOLUTIONS",
+        "alternateName": ["Revon Solutions", "REVON"],
+        "publisher": {
+          "@id": "https://revonsolutions.com/#organization",
+        },
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://revonsolutions.com/#organization",
+        "name": "REVON SOLUTIONS",
+        "url": "https://revonsolutions.com/",
+        "logo": "https://revonsolutions.com/logo.svg",
+      },
+    ],
+  };
+
   return (
     <html
       lang="en"
       className={`dark ${fontStackSansNotch.variable} ${fontStackSansText.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-on-background overflow-x-hidden font-body-md">{children}</body>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body className="min-h-full flex flex-col bg-background text-on-background overflow-x-hidden font-body-md">
+        {children}
+      </body>
     </html>
   );
 }
