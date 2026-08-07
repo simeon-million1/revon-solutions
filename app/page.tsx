@@ -29,7 +29,7 @@ export default function Home() {
                 alt="REVON SOLUTIONS Logo"
                 width={38}
                 height={38}
-                className="h-[28px] md:h-[32px] lg:h-[38px] w-auto brightness-0 invert"
+                className="h-[28px] md:h-[32px] lg:h-[38px] w-auto brightness-0"
               />
               <span>REVON SOLUTIONS</span>
             </Link>
@@ -37,7 +37,7 @@ export default function Home() {
 
           <div className="hidden lg:flex items-center gap-4">
             <Link
-              className="btn-on-dark"
+              className="btn-on-light"
               href="/form"
             >
               Get Your Free 4-week Plan
@@ -58,7 +58,7 @@ export default function Home() {
             Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.
           </p>
           <Link
-            className="btn-solid-white group min-h-[46px]"
+            className="btn-solid-black group min-h-[46px]"
             href="/form"
           >
             Get Your Free 4-week Plan
@@ -178,19 +178,19 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="glass-panel ghost-border p-6 md:p-8 lg:p-12 rounded-2xl lg:rounded-3xl flex flex-col justify-between relative overflow-hidden group hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(113,17,17,0.15)] transition-all duration-500 border border-[#F0F3F5]/15 bg-gradient-to-b from-white/[0.03] to-transparent"
+                className="glass-panel ghost-border p-6 md:p-8 lg:p-12 rounded-2xl lg:rounded-3xl flex flex-col justify-between relative overflow-hidden group hover:-translate-y-2.5 hover:shadow-[0_20px_40px_rgba(113,17,17,0.15)] transition-all duration-500 bg-gradient-to-b from-black/[0.03] to-transparent"
               >
                 <div className="absolute -top-24 -right-24 w-48 h-48 rounded-full bg-[#711111]/20 blur-[50px] group-hover:bg-[#711111]/40 transition-all duration-500 pointer-events-none" />
 
                 <div className="flex flex-col gap-3 md:gap-4 lg:gap-6 relative z-10">
                   <div className="flex items-center justify-start">
-                    <span className="font-headline-md text-[28px] md:text-[42px] lg:text-[54px] font-black text-on-surface/30 group-hover:text-white transition-colors duration-500 select-none tracking-tighter leading-none drop-shadow-[0_0_12px_rgba(113,17,17,0.3)]">
+                    <span className="font-headline-md text-[28px] md:text-[42px] lg:text-[54px] font-black text-on-surface/30 group-hover:text-[#711111] transition-colors duration-500 select-none tracking-tighter leading-none drop-shadow-[0_0_12px_rgba(113,17,17,0.3)]">
                       {item.number}
                     </span>
                   </div>
 
                   <div className="flex flex-col gap-2 md:gap-3 lg:gap-4">
-                    <h3 className="font-headline-md text-[24px] md:text-[25px] lg:text-[32px] font-bold text-on-surface tracking-tight group-hover:text-white transition-colors duration-300">
+                    <h3 className="font-headline-md text-[24px] md:text-[25px] lg:text-[32px] font-bold text-on-surface tracking-tight group-hover:text-[#711111] transition-colors duration-300">
                       {item.title}
                     </h3>
                     <div className="w-8 md:w-10 lg:w-12 h-0.5 lg:h-1 bg-[#711111] rounded-full group-hover:w-24 transition-all duration-500" />
@@ -230,7 +230,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="w-full bg-background dark:bg-background border-t border-white/10 mt-auto relative z-10">
+      <footer className="w-full bg-background border-t border-black/10 mt-auto relative z-10">
         <div className="max-w-[1350px] mx-auto px-6 md:px-12 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Far Left: Big Logo & REVON SOLUTIONS where container starts */}
           <div className="flex items-center gap-2.5 md:gap-3">
@@ -239,7 +239,7 @@ export default function Home() {
               alt="REVON SOLUTIONS Logo"
               width={38}
               height={36}
-              className="h-[28px] md:h-[36px] w-auto brightness-0 invert"
+              className="h-[28px] md:h-[36px] w-auto brightness-0"
             />
             <span className="brand-logo font-headline-md text-[20px] md:text-[24px] font-black tracking-tighter text-on-surface whitespace-nowrap">
               REVON SOLUTIONS
@@ -249,13 +249,13 @@ export default function Home() {
           {/* Center: Terms of Service & Privacy Policy */}
           <nav className="flex flex-wrap justify-center gap-8">
             <Link
-              className="font-label-md text-[14px] md:text-[13px] text-on-surface-variant hover:text-white transition-colors duration-300 uppercase tracking-widest font-semibold"
+              className="font-label-md text-[14px] md:text-[13px] text-on-surface-variant hover:text-[#711111] transition-colors duration-300 uppercase tracking-widest font-semibold"
               href="#"
             >
               Terms of Service
             </Link>
             <Link
-              className="font-label-md text-[14px] md:text-[13px] text-on-surface-variant hover:text-white transition-colors duration-300 uppercase tracking-widest font-semibold"
+              className="font-label-md text-[14px] md:text-[13px] text-on-surface-variant hover:text-[#711111] transition-colors duration-300 uppercase tracking-widest font-semibold"
               href="#"
             >
               Privacy Policy

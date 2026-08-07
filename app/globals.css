@@ -15,8 +15,8 @@
 
 html,
 body {
-  background-color: #0C0C0C !important;
-  color: #F0F3F5 !important;
+  background-color: #FFFFFF !important;
+  color: #0C0C0C !important;
   -ms-overflow-style: none !important;
   /* IE and Edge */
   scrollbar-width: none !important;
@@ -55,7 +55,7 @@ h6,
   text-transform: none !important;
   letter-spacing: -0.06em !important;
   word-spacing: 0.08em !important;
-  color: #F0F3F5 !important;
+  color: #0C0C0C !important;
 }
 
 /* 3. Brand Logo ('REVON SOLUTIONS') Exception: Stack Sans Notch (700 font weight, tighter letter spacing) */
@@ -64,7 +64,7 @@ h6,
   font-weight: 700 !important;
   letter-spacing: -0.06em !important;
   text-transform: uppercase !important;
-  color: #F0F3F5 !important;
+  color: #0C0C0C !important;
 }
 
 /* 4. Question / Pain Point Headlines & Inverted Light Section Rules (High Contrast #0C0C0C) */
@@ -154,6 +154,33 @@ h3.question-headline,
   transform: translateY(-2px);
 }
 
+/* ── Button: Solid black with white text (for Hero) ── */
+.btn-solid-black {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  background-color: #0C0C0C;
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0 10px 30px rgba(113, 17, 17, 0.2);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-solid-black:hover {
+  background-color: #711111;
+  color: #FFFFFF;
+  box-shadow: 0 12px 35px rgba(113, 17, 17, 0.4);
+  transform: translateY(-2px);
+}
+
 /* ── Button: for light/white backgrounds (black text + black border) ── */
 .btn-on-light {
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -187,17 +214,17 @@ body,
 p,
 li {
   font-family: 'Stack Sans Text', sans-serif;
-  color: #F0F3F5;
+  color: #0C0C0C;
 }
 
 @theme {
-  --color-on-background: #F0F3F5;
-  --color-on-surface: #F0F3F5;
-  --color-on-surface-variant: #F0F3F5;
-  --color-background: #0C0C0C;
-  --color-surface: #0C0C0C;
-  --color-surface-dim: #0C0C0C;
-  --color-surface-container-lowest: #0C0C0C;
+  --color-on-background: #0C0C0C;
+  --color-on-surface: #0C0C0C;
+  --color-on-surface-variant: #0C0C0C;
+  --color-background: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-surface-dim: #FFFFFF;
+  --color-surface-container-lowest: #FFFFFF;
   --color-primary: #711111;
   --color-primary-fixed: #711111;
   --color-tertiary: #711111;
@@ -268,21 +295,21 @@ li {
 
 @layer utilities {
   .ghost-border {
-    border: 1px solid rgba(240, 243, 245, 0.25) !important;
+    border: 1px solid rgba(12, 12, 12, 0.15) !important;
   }
 
   .glass-panel {
     background: transparent !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
-    border: 1px solid rgba(240, 243, 245, 0.25) !important;
+    border: 1px solid rgba(12, 12, 12, 0.15) !important;
     box-shadow: none !important;
   }
 
   .glass-panel:hover {
     background: transparent !important;
-    border: 1px solid rgba(240, 243, 245, 0.5) !important;
-    box-shadow: 0 0 25px rgba(113, 17, 17, 0.3) !important;
+    border: 1px solid rgba(12, 12, 12, 0.3) !important;
+    box-shadow: 0 0 25px rgba(113, 17, 17, 0.15) !important;
   }
 
   .primary-cta {
