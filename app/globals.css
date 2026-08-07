@@ -10,12 +10,12 @@
 
   --color-bg-main: #0C0C0C;
   --color-text-main: #F0F3F5;
-  --color-accent-red: #711111;
+  --color-accent-red: #EE0000;
 }
 
 html,
 body {
-  background-color: #FFFFFF !important;
+  background-color: #F6F9FC !important;
   color: #0C0C0C !important;
   -ms-overflow-style: none !important;
   /* IE and Edge */
@@ -51,11 +51,10 @@ h6,
 .font-display,
 .font-subheadline {
   font-family: 'Plus Jakarta Sans', sans-serif !important;
-  font-weight: 500 !important;
+  font-weight: 800 !important;
   text-transform: none !important;
   letter-spacing: -0.06em !important;
   word-spacing: 0.08em !important;
-  color: #0C0C0C !important;
 }
 
 /* 3. Brand Logo ('REVON SOLUTIONS') Exception: Stack Sans Notch (700 font weight, tighter letter spacing) */
@@ -64,7 +63,6 @@ h6,
   font-weight: 700 !important;
   letter-spacing: -0.06em !important;
   text-transform: uppercase !important;
-  color: #0C0C0C !important;
 }
 
 /* 4. Question / Pain Point Headlines & Inverted Light Section Rules (High Contrast #0C0C0C) */
@@ -85,11 +83,11 @@ h3.question-headline,
 
 .inverted-section .text-primary-accent,
 .inverted-section span.text-primary-accent {
-  color: #711111 !important;
+  color: #EE0000 !important;
 }
 
 .inverted-section .watermark-number {
-  color: rgba(113, 17, 17, 0.08) !important;
+  color: rgba(226, 50, 50, 0.08) !important;
   font-family: 'Stack Sans Notch', sans-serif !important;
   font-weight: 900 !important;
 }
@@ -112,7 +110,7 @@ h3.question-headline,
   background-color: transparent;
   color: #F0F3F5;
   border: 1.5px solid rgba(240, 243, 245, 0.6);
-  box-shadow: 0 0 20px rgba(113, 17, 17, 0.3);
+  box-shadow: 0 0 20px rgba(226, 50, 50, 0.3);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -123,7 +121,7 @@ h3.question-headline,
   background-color: #FFFFFF;
   color: #0C0C0C;
   border: 1.5px solid #0C0C0C;
-  box-shadow: 0 5px 30px rgba(113, 17, 17, 0.5);
+  box-shadow: 0 5px 30px rgba(226, 50, 50, 0.5);
   transform: translateY(-2px);
 }
 
@@ -140,7 +138,7 @@ h3.question-headline,
   background-color: #FFFFFF;
   color: #0C0C0C;
   border: none;
-  box-shadow: 0 10px 30px rgba(113, 17, 17, 0.4);
+  box-shadow: 0 10px 30px rgba(226, 50, 50, 0.4);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -150,7 +148,7 @@ h3.question-headline,
 .btn-solid-white:hover {
   background-color: #F0F3F5;
   color: #0C0C0C;
-  box-shadow: 0 12px 35px rgba(113, 17, 17, 0.6);
+  box-shadow: 0 12px 35px rgba(226, 50, 50, 0.6);
   transform: translateY(-2px);
 }
 
@@ -167,7 +165,7 @@ h3.question-headline,
   background-color: #0C0C0C;
   color: #FFFFFF;
   border: none;
-  box-shadow: 0 10px 30px rgba(113, 17, 17, 0.2);
+  box-shadow: 0 10px 30px rgba(226, 50, 50, 0.2);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -175,9 +173,9 @@ h3.question-headline,
 }
 
 .btn-solid-black:hover {
-  background-color: #711111;
+  background-color: #EE0000;
   color: #FFFFFF;
-  box-shadow: 0 12px 35px rgba(113, 17, 17, 0.4);
+  box-shadow: 0 12px 35px rgba(226, 50, 50, 0.4);
   transform: translateY(-2px);
 }
 
@@ -194,7 +192,7 @@ h3.question-headline,
   background-color: transparent;
   color: #0C0C0C;
   border: 1.5px solid #0C0C0C;
-  box-shadow: 0 0 20px rgba(113, 17, 17, 0.15);
+  box-shadow: 0 0 20px rgba(226, 50, 50, 0.15);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -205,7 +203,7 @@ h3.question-headline,
   background-color: #0C0C0C;
   color: #FFFFFF;
   border: 1.5px solid #0C0C0C;
-  box-shadow: 0 5px 30px rgba(113, 17, 17, 0.5);
+  box-shadow: 0 5px 30px rgba(226, 50, 50, 0.5);
   transform: translateY(-2px);
 }
 
@@ -214,21 +212,20 @@ body,
 p,
 li {
   font-family: 'Stack Sans Text', sans-serif;
-  color: #0C0C0C;
 }
 
 @theme {
   --color-on-background: #0C0C0C;
   --color-on-surface: #0C0C0C;
   --color-on-surface-variant: #0C0C0C;
-  --color-background: #FFFFFF;
-  --color-surface: #FFFFFF;
-  --color-surface-dim: #FFFFFF;
-  --color-surface-container-lowest: #FFFFFF;
-  --color-primary: #711111;
-  --color-primary-fixed: #711111;
-  --color-tertiary: #711111;
-  --color-outline: #711111;
+  --color-background: #F6F9FC;
+  --color-surface: #F6F9FC;
+  --color-surface-dim: #F6F9FC;
+  --color-surface-container-lowest: #F6F9FC;
+  --color-primary: #EE0000;
+  --color-primary-fixed: #EE0000;
+  --color-tertiary: #EE0000;
+  --color-outline: #EE0000;
 
   --spacing-unit: 8px;
   --spacing-margin-desktop: 40px;
@@ -309,14 +306,14 @@ li {
   .glass-panel:hover {
     background: transparent !important;
     border: 1px solid rgba(12, 12, 12, 0.3) !important;
-    box-shadow: 0 0 25px rgba(113, 17, 17, 0.15) !important;
+    box-shadow: 0 0 25px rgba(226, 50, 50, 0.15) !important;
   }
 
   .primary-cta {
     background-color: transparent !important;
     color: #F0F3F5 !important;
     border: 1.5px solid rgba(240, 243, 245, 0.6) !important;
-    box-shadow: 0 0 20px rgba(113, 17, 17, 0.3) !important;
+    box-shadow: 0 0 20px rgba(226, 50, 50, 0.3) !important;
     transition: all 0.3s ease !important;
   }
 
@@ -324,7 +321,7 @@ li {
     background-color: rgba(240, 243, 245, 0.1) !important;
     color: #ffffff !important;
     border: 1.5px solid #ffffff !important;
-    box-shadow: 0 0 30px rgba(113, 17, 17, 0.6) !important;
+    box-shadow: 0 0 30px rgba(226, 50, 50, 0.6) !important;
     transform: translateY(-2px) !important;
   }
 
@@ -387,7 +384,7 @@ a.primary-cta-inverted,
   background-color: transparent !important;
   color: #0C0C0C !important;
   border: 1.5px solid #0C0C0C !important;
-  box-shadow: 0 0 25px rgba(113, 17, 17, 0.3) !important;
+  box-shadow: 0 0 25px rgba(226, 50, 50, 0.3) !important;
 }
 
 .inverted-section a.primary-cta:hover,
@@ -399,7 +396,7 @@ a.primary-cta-inverted:hover,
   background-color: #0C0C0C !important;
   color: #FFFFFF !important;
   border: 1.5px solid #0C0C0C !important;
-  box-shadow: 0 5px 30px rgba(113, 17, 17, 0.6) !important;
+  box-shadow: 0 5px 30px rgba(226, 50, 50, 0.6) !important;
   transform: translateY(-2px) !important;
 }
 
