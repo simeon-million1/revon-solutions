@@ -5,14 +5,14 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://revonsolutions.com"),
   title: "Customer Acquisition System | REVON SOLUTIONS",
-  description: "Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.",
+  description: "REVON SOLUTIONS builds done-for-you customer acquisition systems. Get a free, personalized 4-week plan to grow your revenue — delivered in 5 minutes.",
   applicationName: "REVON SOLUTIONS",
   alternates: {
     canonical: "https://revonsolutions.com",
   },
   openGraph: {
     title: "Customer Acquisition System | REVON SOLUTIONS",
-    description: "Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.",
+    description: "REVON SOLUTIONS builds done-for-you customer acquisition systems. Get a free, personalized 4-week plan to grow your revenue — delivered in 5 minutes.",
     url: "https://revonsolutions.com",
     siteName: "REVON SOLUTIONS",
     images: [
