@@ -75,7 +75,7 @@ export default function Home() {
             <h1 className="hero-headline text-[36px] md:text-[48px] lg:text-[56px] font-extrabold text-[#0C0C0C] mb-6 md:mb-8 max-w-4xl mx-auto tracking-tighter leading-[1.08] md:leading-tight">
             Turn Strangers Into <span className="text-[#EE0000]">PAYING CUSTOMERS</span>
           </h1>
-          <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#0C0C0C]/70 max-w-2xl mx-auto mb-8 md:mb-10">
+          <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#313131] max-w-2xl mx-auto mb-8 md:mb-10">
             Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.
           </p>
           <Link
@@ -214,7 +214,7 @@ export default function Home() {
                     <div className="w-8 md:w-10 lg:w-12 h-0.5 lg:h-1 bg-[#EE0000] rounded-full group-hover:w-24 transition-all duration-500" />
                   </div>
 
-                  <p className="font-body-lg text-[17px] md:text-[15px] lg:text-[18px] text-[#0C0C0C]/70 leading-relaxed">
+                  <p className="font-body-lg text-[17px] md:text-[15px] lg:text-[18px] text-[#313131] leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -265,13 +265,13 @@ export default function Home() {
           {/* Center: Terms of Service & Privacy Policy */}
           <nav className="flex flex-wrap justify-center gap-8">
             <Link
-              className="font-label-md text-[14px] md:text-[13px] text-on-surface-variant hover:text-[#EE0000] transition-colors duration-300 uppercase tracking-widest font-semibold"
+              className="font-label-md text-[14px] md:text-[13px] text-[#313131] hover:text-[#EE0000] transition-colors duration-300 uppercase tracking-widest font-semibold"
               href="#"
             >
               Terms of Service
             </Link>
             <Link
-              className="font-label-md text-[14px] md:text-[13px] text-on-surface-variant hover:text-[#EE0000] transition-colors duration-300 uppercase tracking-widest font-semibold"
+              className="font-label-md text-[14px] md:text-[13px] text-[#313131] hover:text-[#EE0000] transition-colors duration-300 uppercase tracking-widest font-semibold"
               href="#"
             >
               Privacy Policy
@@ -279,7 +279,7 @@ export default function Home() {
           </nav>
 
           {/* Far Right: Copyright on right side of container */}
-          <div className="font-body-md text-[14px] md:text-[13px] text-on-surface-variant opacity-60 font-medium">
+          <div className="font-body-md text-[14px] md:text-[13px] text-[#313131] opacity-60 font-medium">
             © 2026 REVON SOLUTIONS. All rights reserved.
           </div>
         </div>
