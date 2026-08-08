@@ -37,8 +37,8 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Center: Nav links — hidden on mobile, visible on md+ */}
-          <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-10">
+          {/* Center: Nav links — hidden on mobile phones, visible on sm+ */}
+          <nav className="hidden sm:flex absolute left-1/2 -translate-x-1/2 items-center gap-10">
             <Link
               className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#EE0000] transition-colors tracking-widest uppercase"
               href="#how-it-works"
@@ -53,8 +53,8 @@ export default function Home() {
             </Link>
           </nav>
 
-          {/* Right: CTA text link — hidden on mobile, visible on md+ */}
-          <div className="ml-auto hidden md:flex items-center">
+          {/* Right: CTA text link — hidden on mobile phones, visible on sm+ */}
+          <div className="ml-auto hidden sm:flex items-center">
             <Link
               className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#EE0000] transition-colors tracking-widest uppercase"
               href="/form"
