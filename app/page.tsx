@@ -68,7 +68,7 @@ export default function Home() {
 
       <main className="flex-grow relative overflow-hidden">
 
-        <div className="relative w-full min-h-[110vh] bg-[#F6F9FC] flex items-center justify-center">
+        <div className="relative w-full min-h-[110vh] bg-[#F0F3F5] flex items-center justify-center">
           
           <section className="min-h-[110vh] max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-center justify-center pt-20 pb-36 md:py-36 lg:py-48 text-center relative z-10">
 
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
 
         {/* ───────── 3. Problem (Inverted White/Black Editorial Redesign) ───────── */}
-        <section className="w-full inverted-section bg-[#F6F9FC] py-20 md:py-32 relative z-10 overflow-hidden border-y border-white/10 shadow-2xl">
+        <section className="w-full inverted-section bg-[#F0F3F5] py-20 md:py-32 relative z-10 overflow-hidden border-y border-white/10 shadow-2xl">
           {/* Removed background warm red ambient glows */}
           <div className="max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-center relative z-10">
             <h2 className="text-[36px] md:text-[48px] lg:text-[56px] font-black text-[#0C0C0C] mb-16 md:mb-24 text-center tracking-tighter leading-tight">
@@ -168,7 +168,7 @@ export default function Home() {
         </section>
 
         {/* ───────── 4. Solution / Value Prop ───────── */}
-        <section id="how-it-works" className="w-full bg-[#F6F9FC] px-6 md:px-12 py-16 md:py-24 lg:py-32 relative z-10">
+        <section id="how-it-works" className="w-full bg-[#F0F3F5] px-6 md:px-12 py-16 md:py-24 lg:py-32 relative z-10">
 
           
           <div className="text-center max-w-4xl mx-auto mb-10 md:mb-16 lg:mb-24">
@@ -225,7 +225,7 @@ export default function Home() {
 
 
         {/* ───────── 9. Final CTA (Inverted White/Black Editorial Redesign) ───────── */}
-        <section className="min-h-[70vh] md:min-h-[80vh] w-full inverted-section bg-[#F6F9FC] py-32 md:py-52 relative z-10 flex flex-col items-center justify-center overflow-hidden border-t border-white/10 shadow-2xl mt-12">
+        <section className="min-h-[70vh] md:min-h-[80vh] w-full inverted-section bg-[#F0F3F5] py-32 md:py-52 relative z-10 flex flex-col items-center justify-center overflow-hidden border-t border-white/10 shadow-2xl mt-12">
           {/* Removed background warm red ambient glow */}
           <div className="max-w-[1350px] mx-auto text-center px-6 md:px-12 flex flex-col items-center justify-center z-10">
             <h2 className="text-[36px] md:text-[48px] lg:text-[56px] font-black text-[#0C0C0C] mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">

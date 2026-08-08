@@ -15,7 +15,7 @@
 
 html,
 body {
-  background-color: #F6F9FC !important;
+  background-color: #F0F3F5 !important;
   color: #0C0C0C !important;
   -ms-overflow-style: none !important;
   /* IE and Edge */
@@ -218,10 +218,10 @@ li {
   --color-on-background: #0C0C0C;
   --color-on-surface: #0C0C0C;
   --color-on-surface-variant: #0C0C0C;
-  --color-background: #F6F9FC;
-  --color-surface: #F6F9FC;
-  --color-surface-dim: #F6F9FC;
-  --color-surface-container-lowest: #F6F9FC;
+  --color-background: #F0F3F5;
+  --color-surface: #F0F3F5;
+  --color-surface-dim: #F0F3F5;
+  --color-surface-container-lowest: #F0F3F5;
   --color-primary: #EE0000;
   --color-primary-fixed: #EE0000;
   --color-tertiary: #EE0000;
