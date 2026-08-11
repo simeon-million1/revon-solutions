@@ -231,7 +231,7 @@ export default function Home() {
             <h2 className="text-[46px] md:text-[58px] lg:text-[66px] font-black text-[#0C0C0C] mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
               Start With A <span className="text-[#AE0101]">FREE Strategy</span>
             </h2>
-            <p className="font-body-lg mb-8 text-[17px] md:text-[18px] leading-relaxed font-medium max-w-xl" style={{ color: '#6B7280' }}>
+            <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#313131] max-w-2xl mx-auto mb-8 md:mb-10">
               Fill out a form (takes 5 min) and receive a <strong>READY TO USE</strong> personalized system you can use in your business <strong>IMMEDIATELY</strong>.
             </p>
             <Link
