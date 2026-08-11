@@ -233,59 +233,42 @@ export default function QuestionnairePage() {
           </div>
         )}
 
-        {/* PAGE 2: QUESTIONS (1 Per View, 5 total) */}
+        {/* PAGE 2: QUESTIONS — fixed layout, only input zone switches */}
         {page === 2 && (
-          <div key={`page-2-q-${qIndex}`} className="animate-step w-full max-w-[700px] mx-auto flex flex-col items-center text-center">
-            
-            {/* Centered Headline */}
-            <div className="w-full mb-5 sm:mb-7 max-w-[620px]">
-              {qIndex === 0 && (
-                <h1 className="override-black text-[28px] sm:text-[36px] md:text-[40px] font-black tracking-tight leading-[1.15]">
-                  What do you sell? Say it in one short sentence.
-                </h1>
-              )}
-              {qIndex === 1 && (
-                <h1 className="override-black text-[28px] sm:text-[36px] md:text-[40px] font-black tracking-tight leading-[1.15]">
-                  Where do most of your clients come from now?
-                </h1>
-              )}
-              {qIndex === 2 && (
-                <h1 className="override-black text-[28px] sm:text-[36px] md:text-[40px] font-black tracking-tight leading-[1.15]">
-                  How many new clients do you get each month right now?
-                </h1>
-              )}
-              {qIndex === 3 && (
-                <h1 className="override-black text-[28px] sm:text-[36px] md:text-[40px] font-black tracking-tight leading-[1.15]">
-                  When someone shows they are interested, what do you do next?
-                </h1>
-              )}
-              {qIndex === 4 && (
-                <h1 className="override-black text-[28px] sm:text-[36px] md:text-[40px] font-black tracking-tight leading-[1.15]">
-                  How fast do you follow up with a new lead?
-                </h1>
-              )}
+          <div className="w-full max-w-[580px] mx-auto flex flex-col items-center text-center">
+
+            {/* ── ZONE 1: Headline — fixed min-height so it never shifts ── */}
+            <div className="w-full flex items-center justify-center mb-10 sm:mb-12" style={{ minHeight: '130px' }}>
+              <h1 className="override-black text-[28px] sm:text-[36px] md:text-[40px] font-black tracking-tight leading-[1.15] max-w-[560px]">
+                {qIndex === 0 && "What do you sell? Say it in one short sentence."}
+                {qIndex === 1 && "Where do most of your clients come from now?"}
+                {qIndex === 2 && "How many new clients do you get each month right now?"}
+                {qIndex === 3 && "When someone shows they are interested, what do you do next?"}
+                {qIndex === 4 && "How fast do you follow up with a new lead?"}
+              </h1>
             </div>
 
-            {/* Options / Input */}
-            <div className="w-full max-w-[480px] text-left">
+            {/* ── ZONE 2: Input — only this animates, fixed min-height ── */}
+            <div className="w-full" style={{ minHeight: '180px' }}>
               {errorMsg && (
-                <div className="mb-2.5 text-[#AE0101] font-bold text-xs text-center">{errorMsg}</div>
+                <div className="mb-3 text-[#AE0101] font-bold text-xs text-center">{errorMsg}</div>
               )}
 
-              <div className="space-y-2 sm:space-y-2.5">
-                {/* Q1 */}
+              <div key={`input-${qIndex}`} className="animate-step w-full text-left">
+
+                {/* Q1 — text input */}
                 {qIndex === 0 && (
                   <input
                     type="text"
                     value={whatWeSell}
                     onChange={(e) => setWhatWeSell(e.target.value)}
                     placeholder="e.g., Lead gen for real estate agents"
-                    className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none"
+                    className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none"
                     autoFocus
                   />
                 )}
 
-                {/* Q2 */}
+                {/* Q2 — 2-column grid, Not sure spans full centered */}
                 {qIndex === 1 && (
                   <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
                     {["Ads", "Cold outreach", "Content", "Referrals", "Not sure"].map((opt) => {
@@ -296,9 +279,7 @@ export default function QuestionnairePage() {
                           type="button"
                           onClick={() => setClientSource(opt)}
                           className={`py-3 px-2 sm:px-3 rounded-full border font-extrabold text-xs sm:text-[14px] text-center transition-all cursor-pointer ${
-                            selected
-                              ? "override-white bg-[#0C0C0C] border-[#0C0C0C]"
-                              : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
+                            selected ? "override-white bg-[#0C0C0C] border-[#0C0C0C]" : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
                           } ${opt === "Not sure" ? "col-span-2 w-full sm:w-[calc(50%-6px)] mx-auto" : "w-full"}`}
                         >
                           {opt}
@@ -308,21 +289,19 @@ export default function QuestionnairePage() {
                   </div>
                 )}
 
-                {/* Q3 */}
+                {/* Q3 — text input */}
                 {qIndex === 2 && (
-                  <div>
-                    <input
-                      type="text"
-                      value={monthlyClients}
-                      onChange={(e) => setMonthlyClients(e.target.value)}
-                      placeholder="Type your answer (e.g., 5 clients)..."
-                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none"
-                      autoFocus
-                    />
-                  </div>
+                  <input
+                    type="text"
+                    value={monthlyClients}
+                    onChange={(e) => setMonthlyClients(e.target.value)}
+                    placeholder="Type your answer (e.g., 5 clients)..."
+                    className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none"
+                    autoFocus
+                  />
                 )}
 
-                {/* Q4 */}
+                {/* Q4 — 2-column buttons + text input below */}
                 {qIndex === 3 && (
                   <div className="flex flex-col gap-2.5 sm:gap-3">
                     <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
@@ -334,9 +313,7 @@ export default function QuestionnairePage() {
                             type="button"
                             onClick={() => setNextAction(opt)}
                             className={`py-3 px-2 sm:px-3 rounded-full border font-extrabold text-xs sm:text-[14px] text-center transition-all cursor-pointer ${
-                              selected
-                                ? "override-white bg-[#0C0C0C] border-[#0C0C0C]"
-                                : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
+                              selected ? "override-white bg-[#0C0C0C] border-[#0C0C0C]" : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
                             }`}
                           >
                             {opt}
@@ -349,12 +326,12 @@ export default function QuestionnairePage() {
                       value={!["I call them", "I email them"].includes(nextAction) ? nextAction : ""}
                       onChange={(e) => setNextAction(e.target.value)}
                       placeholder="Or type what you do..."
-                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none text-center"
+                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none text-center"
                     />
                   </div>
                 )}
 
-                {/* Q5 */}
+                {/* Q5 — vertical list */}
                 {qIndex === 4 && (
                   <div className="flex flex-col gap-2.5">
                     {["Same day", "1 - 2 days", "3+ days"].map((opt) => {
@@ -365,9 +342,7 @@ export default function QuestionnairePage() {
                           type="button"
                           onClick={() => setFollowUpSpeed(opt)}
                           className={`py-3.5 px-6 rounded-full border font-extrabold text-sm sm:text-[15px] text-center transition-all cursor-pointer ${
-                            selected
-                              ? "override-white bg-[#0C0C0C] border-[#0C0C0C]"
-                              : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
+                            selected ? "override-white bg-[#0C0C0C] border-[#0C0C0C]" : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
                           }`}
                         >
                           {opt}
@@ -377,51 +352,48 @@ export default function QuestionnairePage() {
                   </div>
                 )}
 
-                {/* Controls */}
-                <div className="flex justify-center items-center gap-3 pt-4 sm:pt-5">
-                  <button
-                    type="button"
-                    onClick={handleQBack}
-                    style={{ padding: "12px 24px" }}
-                    className="override-black rounded-full border border-[#0C0C0C]/35 font-black text-xs sm:text-sm uppercase tracking-wider hover:bg-black/5 transition-colors inline-flex items-center justify-center gap-1.5 cursor-pointer shadow-none"
-                  >
-                    <ArrowLeft className="w-3.5 h-3.5 stroke-[2.5]" />
-                    <span>Back</span>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={handleQNext}
-                    disabled={isSubmitting}
-                    style={{ padding: "12px 24px" }}
-                    className="override-white bg-[#0C0C0C] font-black text-xs sm:text-sm uppercase tracking-wider rounded-full hover:opacity-85 transition-all inline-flex items-center justify-center gap-2 cursor-pointer shadow-none disabled:opacity-50"
-                  >
-                    <span>{isSubmitting ? "Submitting..." : qIndex < 4 ? "Next" : "Submit"}</span>
-                    <ArrowRight className="w-4 h-4 text-white stroke-[2.5]" />
-                  </button>
-                </div>
-              </div>
-
-              {/* Step indicator dots (5 steps) */}
-              <div className="flex items-center justify-center gap-2.5 pt-7 sm:pt-8">
-                {[0, 1, 2, 3, 4].map((stepIdx) => {
-                  const isCompletedOrCurrent = stepIdx <= qIndex;
-                  const isCurrent = stepIdx === qIndex;
-                  return (
-                    <div
-                      key={stepIdx}
-                      className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all duration-300 ${
-                        isCurrent
-                          ? "bg-[#0C0C0C] scale-125"
-                          : isCompletedOrCurrent
-                          ? "bg-[#0C0C0C]/60"
-                          : "bg-[#0C0C0C]/15"
-                      }`}
-                    />
-                  );
-                })}
               </div>
             </div>
+
+            {/* ── ZONE 3: Controls — always at the same vertical position ── */}
+            <div className="flex justify-center items-center gap-3 mt-10 sm:mt-12">
+              <button
+                type="button"
+                onClick={handleQBack}
+                style={{ padding: "12px 24px" }}
+                className="override-black rounded-full border border-[#0C0C0C]/35 font-black text-xs sm:text-sm uppercase tracking-wider hover:bg-black/5 transition-colors inline-flex items-center justify-center gap-1.5 cursor-pointer shadow-none"
+              >
+                <ArrowLeft className="w-3.5 h-3.5 stroke-[2.5]" />
+                <span>Back</span>
+              </button>
+              <button
+                type="button"
+                onClick={handleQNext}
+                disabled={isSubmitting}
+                style={{ padding: "12px 24px" }}
+                className="override-white bg-[#0C0C0C] font-black text-xs sm:text-sm uppercase tracking-wider rounded-full hover:opacity-85 transition-all inline-flex items-center justify-center gap-2 cursor-pointer shadow-none disabled:opacity-50"
+              >
+                <span>{isSubmitting ? "Submitting..." : qIndex < 4 ? "Next" : "Submit"}</span>
+                <ArrowRight className="w-4 h-4 text-white stroke-[2.5]" />
+              </button>
+            </div>
+
+            {/* ── ZONE 4: Step dots — always at same position ── */}
+            <div className="flex items-center justify-center gap-2.5 mt-6 sm:mt-8">
+              {[0, 1, 2, 3, 4].map((stepIdx) => {
+                const isCompletedOrCurrent = stepIdx <= qIndex;
+                const isCurrent = stepIdx === qIndex;
+                return (
+                  <div
+                    key={stepIdx}
+                    className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all duration-300 ${
+                      isCurrent ? "bg-[#0C0C0C] scale-125" : isCompletedOrCurrent ? "bg-[#0C0C0C]/60" : "bg-[#0C0C0C]/15"
+                    }`}
+                  />
+                );
+              })}
+            </div>
+
           </div>
         )}
 
