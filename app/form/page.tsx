@@ -129,9 +129,11 @@ export default function QuestionnairePage() {
       {/* Minimal Header */}
       <header className="w-full py-4 px-6 md:px-12 flex justify-between items-center flex-shrink-0 bg-[#FFFFFF] z-10">
         <Link className="brand-logo flex items-center gap-3 text-[22px] sm:text-[24px] font-black tracking-tight" href="/">
-          <Image src="/logo.svg" alt="Logo" width={30} height={30} className="h-[30px] w-auto brightness-0" />
           {page === 3 && (
-            <span className="override-black font-black">REVON SOLUTIONS</span>
+            <>
+              <Image src="/logo.svg" alt="Logo" width={30} height={30} className="h-[30px] w-auto brightness-0" />
+              <span className="override-black font-black">REVON SOLUTIONS</span>
+            </>
           )}
         </Link>
         <Link href="/" className="override-black flex items-center gap-1.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider hover:opacity-70 transition-opacity">
@@ -147,7 +149,7 @@ export default function QuestionnairePage() {
         {page === 1 && (
           <div key="page-1" className="animate-step w-full max-w-[700px] mx-auto flex flex-col items-center text-center -mt-12 sm:-mt-20">
             {/* Centered Headline */}
-            <h1 className="override-black text-[30px] sm:text-[38px] md:text-[46px] font-black tracking-tight leading-[1.1] mb-6 sm:mb-8 w-full max-w-[600px]">
+            <h1 className="override-black text-[30px] sm:text-[38px] md:text-[46px] font-black tracking-tight leading-[1.1] mb-12 sm:mb-16 w-full max-w-[600px]">
               Where should we send your free strategy?
             </h1>
 
@@ -285,7 +287,7 @@ export default function QuestionnairePage() {
 
                 {/* Q2 */}
                 {qIndex === 1 && (
-                  <div className="flex flex-col gap-2 sm:gap-2.5">
+                  <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
                     {["Ads", "Cold outreach", "Content", "Referrals", "Not sure"].map((opt) => {
                       const selected = clientSource === opt;
                       return (
@@ -293,7 +295,7 @@ export default function QuestionnairePage() {
                           key={opt}
                           type="button"
                           onClick={() => setClientSource(opt)}
-                          className={`py-3 px-6 rounded-full border font-extrabold text-sm sm:text-[15px] text-center transition-all cursor-pointer ${
+                          className={`py-3 px-2 sm:px-3 rounded-full border font-extrabold text-xs sm:text-[14px] text-center transition-all cursor-pointer ${
                             selected
                               ? "override-white bg-[#0C0C0C] border-[#0C0C0C]"
                               : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
