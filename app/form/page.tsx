@@ -150,65 +150,67 @@ export default function QuestionnairePage() {
             </h1>
 
             {/* Form */}
-            <div className="w-full max-w-[480px] text-left">
+            <div className="w-full max-w-[640px] text-left">
               {errorMsg && (
                 <div className="mb-2.5 text-[#AE0101] font-bold text-xs text-center">{errorMsg}</div>
               )}
 
-              <form onSubmit={handlePage1Next} className="space-y-3 sm:space-y-3.5">
-                <div>
-                  <label className="override-black block text-xs font-extrabold mb-1 uppercase tracking-wider">
-                    Name *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="John Doe"
-                    className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
-                  />
-                </div>
+              <form onSubmit={handlePage1Next} className="space-y-4 sm:space-y-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                  <div>
+                    <label className="override-black block text-xs font-extrabold mb-1 uppercase tracking-wider">
+                      Name *
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="John Doe"
+                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
+                    />
+                  </div>
 
-                <div>
-                  <label className="override-black block text-xs font-extrabold mb-1 uppercase tracking-wider">
-                    Business Name *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={businessName}
-                    onChange={(e) => setBusinessName(e.target.value)}
-                    placeholder="Acme Corp"
-                    className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
-                  />
-                </div>
+                  <div>
+                    <label className="override-black block text-xs font-extrabold mb-1 uppercase tracking-wider">
+                      Business Name *
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      value={businessName}
+                      onChange={(e) => setBusinessName(e.target.value)}
+                      placeholder="Acme Corp"
+                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
+                    />
+                  </div>
 
-                <div>
-                  <label className="override-black block text-xs font-extrabold mb-1 uppercase tracking-wider">
-                    Business Email *
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="john@acmecorp.com"
-                    className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
-                  />
-                </div>
+                  <div>
+                    <label className="override-black block text-xs font-extrabold mb-1 uppercase tracking-wider">
+                      Business Email *
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="john@acmecorp.com"
+                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
+                    />
+                  </div>
 
-                <div>
-                  <label className="override-black block text-xs font-extrabold mb-1 uppercase tracking-wider">
-                    Website Link
-                  </label>
-                  <input
-                    type="text"
-                    value={websiteUrl}
-                    onChange={(e) => setWebsiteUrl(e.target.value)}
-                    placeholder="https://yourwebsite.com or @social"
-                    className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
-                  />
+                  <div>
+                    <label className="override-black block text-xs font-extrabold mb-1 uppercase tracking-wider">
+                      Website Link
+                    </label>
+                    <input
+                      type="text"
+                      value={websiteUrl}
+                      onChange={(e) => setWebsiteUrl(e.target.value)}
+                      placeholder="https://yourwebsite.com or @social"
+                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
+                    />
+                  </div>
                 </div>
 
                 {/* Centered Next Button */}
