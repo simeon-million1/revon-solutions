@@ -299,7 +299,7 @@ export default function QuestionnairePage() {
                             selected
                               ? "override-white bg-[#0C0C0C] border-[#0C0C0C]"
                               : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
-                          }`}
+                          } ${opt === "Not sure" ? "col-span-2 w-full sm:w-[calc(50%-6px)] mx-auto" : "w-full"}`}
                         >
                           {opt}
                         </button>
@@ -381,7 +381,7 @@ export default function QuestionnairePage() {
                     type="button"
                     onClick={handleQBack}
                     style={{ padding: "12px 24px" }}
-                    className="override-black rounded-full border border-[#0C0C0C]/35 font-extrabold text-xs uppercase tracking-wider hover:bg-black/5 transition-colors inline-flex items-center justify-center gap-1.5 cursor-pointer shadow-none"
+                    className="override-black rounded-full border border-[#0C0C0C]/35 font-black text-xs sm:text-sm uppercase tracking-wider hover:bg-black/5 transition-colors inline-flex items-center justify-center gap-1.5 cursor-pointer shadow-none"
                   >
                     <ArrowLeft className="w-3.5 h-3.5 stroke-[2.5]" />
                     <span>Back</span>
