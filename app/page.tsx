@@ -106,7 +106,7 @@ export default function Home() {
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
                     <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
-                      Wrong People?
+                      Wrong People
                     </h3>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export default function Home() {
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
                     <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
-                      Inconsistent Months?
+                      Inconsistent Months
                     </h3>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export default function Home() {
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
                     <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
-                      Buyers Going Cold?
+                      Buyers Going Cold
                     </h3>
                   </div>
                 </div>
@@ -231,7 +231,7 @@ export default function Home() {
             <h2 className="text-[46px] md:text-[58px] lg:text-[66px] font-black text-[#0C0C0C] mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
               Start With A <span className="text-[#EE0000]">FREE Strategy</span>
             </h2>
-            <p className="font-body-lg mb-8 text-[17px] md:text-[18px] leading-relaxed font-medium max-w-xl text-[#313131]">
+            <p className="font-body-lg mb-8 text-[17px] md:text-[18px] leading-relaxed font-medium max-w-xl" style={{ color: '#6B7280' }}>
               Fill out a form (takes 5 min) and receive a <strong>READY TO USE</strong> personalized system you can use in your business <strong>IMMEDIATELY</strong>.
             </p>
             <Link
