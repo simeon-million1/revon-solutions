@@ -23,7 +23,7 @@ export default function Home() {
           {/* Left: Logo */}
           <div className="flex items-center">
             <Link
-              className="brand-logo flex items-center gap-2.5 text-[18px] md:text-[20px] font-black tracking-tighter text-[#0C0C0C] whitespace-nowrap"
+              className="brand-logo flex items-center gap-2.5 text-[22px] md:text-[24px] font-black tracking-tighter text-[#0C0C0C] whitespace-nowrap"
               href="/"
             >
               <Image
@@ -31,14 +31,14 @@ export default function Home() {
                 alt="REVON SOLUTIONS Logo"
                 width={30}
                 height={30}
-                className="h-[26px] w-auto brightness-0"
+                className="h-[28px] w-auto brightness-0"
               />
               <span>REVON SOLUTIONS</span>
             </Link>
           </div>
 
-          {/* Center: Nav links — hidden on mobile phones, visible on sm+ */}
-          <nav className="hidden sm:flex absolute left-1/2 -translate-x-1/2 items-center gap-10">
+          {/* Center: Nav links — phone-only hidden */}
+          <nav className="flex max-sm:hidden absolute left-1/2 -translate-x-1/2 items-center gap-10">
             <Link
               className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#EE0000] transition-colors tracking-widest uppercase"
               href="#how-it-works"
@@ -53,8 +53,8 @@ export default function Home() {
             </Link>
           </nav>
 
-          {/* Right: CTA text link — hidden on mobile phones, visible on sm+ */}
-          <div className="ml-auto hidden sm:flex items-center">
+          {/* Right: CTA text link — phone-only hidden */}
+          <div className="ml-auto flex max-sm:hidden items-center">
             <Link
               className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#EE0000] transition-colors tracking-widest uppercase"
               href="/form"
@@ -70,9 +70,9 @@ export default function Home() {
 
         <div className="relative w-full min-h-[110vh] bg-[#F0F3F5] flex items-center justify-center">
           
-          <section className="min-h-[110vh] max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-center justify-center pt-20 pb-36 md:py-36 lg:py-48 text-center relative z-10">
+          <section className="min-h-[110vh] max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-center justify-center pt-36 pb-36 md:pt-48 md:pb-36 lg:pt-56 lg:pb-48 text-center relative z-10">
 
-            <h1 className="hero-headline text-[36px] md:text-[48px] lg:text-[56px] font-extrabold text-[#0C0C0C] mb-6 md:mb-8 max-w-4xl mx-auto tracking-tighter leading-[1.08] md:leading-tight">
+            <h1 className="hero-headline text-[46px] md:text-[58px] lg:text-[66px] font-extrabold text-[#0C0C0C] mb-6 md:mb-8 max-w-4xl mx-auto tracking-tighter leading-[1.08] md:leading-tight">
             Turn Strangers Into <span className="text-[#EE0000]">PAYING CUSTOMERS</span>
           </h1>
           <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#313131] max-w-2xl mx-auto mb-8 md:mb-10">
@@ -92,8 +92,8 @@ export default function Home() {
         <section className="w-full inverted-section bg-[#F0F3F5] py-20 md:py-32 relative z-10 overflow-hidden border-y border-white/10 shadow-2xl">
           {/* Removed background warm red ambient glows */}
           <div className="max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-center relative z-10">
-            <h2 className="text-[36px] md:text-[48px] lg:text-[56px] font-black text-[#0C0C0C] mb-16 md:mb-24 text-center tracking-tighter leading-tight">
-              Is This <span className="text-[#EE0000]">YOU?</span>
+            <h2 className="text-[46px] md:text-[58px] lg:text-[66px] font-black text-[#0C0C0C] mb-16 md:mb-24 text-center tracking-tighter leading-tight">
+              Struggling With <span className="text-[#EE0000]">ANY Of These?</span>
             </h2>
 
             {/* 3 Problems in the same row - Perfectly aligned elements */}
@@ -106,7 +106,7 @@ export default function Home() {
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
                     <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
-                      Wrong People Showing Up?
+                      Wrong People?
                     </h3>
                   </div>
                 </div>
@@ -172,7 +172,7 @@ export default function Home() {
 
           
           <div className="text-center max-w-4xl mx-auto mb-10 md:mb-16 lg:mb-24">
-            <h2 className="text-[36px] md:text-[48px] lg:text-[56px] font-black text-[#0C0C0C] mb-4 md:mb-6 tracking-tighter leading-tight">
+            <h2 className="text-[46px] md:text-[58px] lg:text-[66px] font-black text-[#0C0C0C] mb-4 md:mb-6 tracking-tighter leading-tight">
               Here&apos;s How we <span className="text-[#EE0000]">FIX</span> that
             </h2>
           </div>
@@ -228,10 +228,10 @@ export default function Home() {
         <section className="min-h-[70vh] md:min-h-[80vh] w-full inverted-section bg-[#F0F3F5] py-32 md:py-52 relative z-10 flex flex-col items-center justify-center overflow-hidden border-t border-white/10 shadow-2xl mt-12">
           {/* Removed background warm red ambient glow */}
           <div className="max-w-[1350px] mx-auto text-center px-6 md:px-12 flex flex-col items-center justify-center z-10">
-            <h2 className="text-[36px] md:text-[48px] lg:text-[56px] font-black text-[#0C0C0C] mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
+            <h2 className="text-[46px] md:text-[58px] lg:text-[66px] font-black text-[#0C0C0C] mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
               Start With A <span className="text-[#EE0000]">FREE Strategy</span>
             </h2>
-            <p className="mb-8 text-[17px] md:text-[18px] leading-relaxed font-medium max-w-xl text-[#0C0C0C]">
+            <p className="font-body-lg mb-8 text-[17px] md:text-[18px] leading-relaxed font-medium max-w-xl text-[#313131]">
               Fill out a form (takes 5 min) and receive a <strong>READY TO USE</strong> personalized system you can use in your business <strong>IMMEDIATELY</strong>.
             </p>
             <Link
@@ -255,9 +255,9 @@ export default function Home() {
               alt="REVON SOLUTIONS Logo"
               width={38}
               height={36}
-              className="h-[28px] md:h-[36px] w-auto brightness-0"
+              className="h-[28px] md:h-[30px] w-auto brightness-0"
             />
-            <span className="brand-logo font-headline-md text-[20px] md:text-[24px] font-black tracking-tighter text-on-surface whitespace-nowrap">
+            <span className="brand-logo font-headline-md text-[22px] md:text-[24px] font-black tracking-tighter text-on-surface whitespace-nowrap">
               REVON SOLUTIONS
             </span>
           </div>
