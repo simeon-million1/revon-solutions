@@ -324,30 +324,32 @@ export default function QuestionnairePage() {
 
                 {/* Q4 */}
                 {qIndex === 3 && (
-                  <div className="flex flex-col gap-2.5">
-                    {["I call them", "I email them"].map((opt) => {
-                      const selected = nextAction === opt;
-                      return (
-                        <button
-                          key={opt}
-                          type="button"
-                          onClick={() => setNextAction(opt)}
-                          className={`py-3.5 px-6 rounded-full border font-extrabold text-sm sm:text-[15px] text-center transition-all cursor-pointer ${
-                            selected
-                              ? "override-white bg-[#0C0C0C] border-[#0C0C0C]"
-                              : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
-                          }`}
-                        >
-                          {opt}
-                        </button>
-                      );
-                    })}
+                  <div className="flex flex-col gap-2.5 sm:gap-3">
+                    <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
+                      {["I call them", "I email them"].map((opt) => {
+                        const selected = nextAction === opt;
+                        return (
+                          <button
+                            key={opt}
+                            type="button"
+                            onClick={() => setNextAction(opt)}
+                            className={`py-3 px-2 sm:px-3 rounded-full border font-extrabold text-xs sm:text-[14px] text-center transition-all cursor-pointer ${
+                              selected
+                                ? "override-white bg-[#0C0C0C] border-[#0C0C0C]"
+                                : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
+                            }`}
+                          >
+                            {opt}
+                          </button>
+                        );
+                      })}
+                    </div>
                     <input
                       type="text"
                       value={!["I call them", "I email them"].includes(nextAction) ? nextAction : ""}
                       onChange={(e) => setNextAction(e.target.value)}
                       placeholder="Or type what you do..."
-                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none"
+                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none text-center"
                     />
                   </div>
                 )}
