@@ -59,7 +59,7 @@ export default function Home() {
               className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#EE0000] transition-colors tracking-widest uppercase"
               href="/form"
             >
-              Get Your Free 4-week Plan →
+              Get Your Free Strategy →
             </Link>
           </div>
 
@@ -76,13 +76,13 @@ export default function Home() {
             Turn Strangers Into <span className="text-[#EE0000]">PAYING CUSTOMERS</span>
           </h1>
           <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#313131] max-w-2xl mx-auto mb-8 md:mb-10">
-            Not enough people buying from you? We fix that in 4 weeks with a 7-figure strategy built just for you.
+            Not enough people buying from you? We implement the exact acquisition system 7-figure businesses use.
           </p>
           <Link
             className="btn-solid-black group min-h-[46px] mx-auto"
             href="/form"
           >
-            Get Your Free 4-week Plan
+            Get Your Free Strategy
             <ArrowRight className="ml-2.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </section>
@@ -106,7 +106,7 @@ export default function Home() {
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
                     <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
-                      Leads Not The Right <br /> Fit?
+                      Wrong People Showing Up?
                     </h3>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function Home() {
 
                 <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
                   <p className="font-body-lg text-[17px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
-                    You get leads who were never going to buy
+                    You get interest, but mostly from people who were never going to buy.
                   </p>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function Home() {
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
                     <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
-                      Not Getting Leads Consistently?
+                      Inconsistent Months?
                     </h3>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ export default function Home() {
 
                 <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
                   <p className="font-body-lg text-[17px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
-                    Even when they are the right fit, there&apos;s just not enough of them consistently coming in
+                    Some months are great, but struggle to find buyers the next.
                   </p>
                 </div>
               </div>
@@ -150,7 +150,7 @@ export default function Home() {
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
                     <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
-                      Leads Not Turning Into Customers?
+                      Buyers Going Cold?
                     </h3>
                   </div>
                 </div>
@@ -159,7 +159,7 @@ export default function Home() {
 
                 <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
                   <p className="font-body-lg text-[17px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
-                    Leads come in, but they never become paying clients
+                    Qualified leads show interest, but not enough become paying clients.
                   </p>
                 </div>
               </div>
@@ -182,17 +182,17 @@ export default function Home() {
               {
                 number: "01",
                 title: "We make your offer easy to say yes to",
-                description: "Through optimizing your offer, more people buy without you changing what you sell.",
+                description: "Through enhancing your offer, more people buy from you.",
               },
               {
                 number: "02",
                 title: "We bring in qualified leads regularly",
-                description: "Through paid ads, cold outreach or content monetization, you get leads every week, not just once in a while.",
+                description: "Through paid ads, cold outreach or content monetization, you get sales conversations consistently.",
               },
               {
                 number: "03",
                 title: "We fix the spots where leads fall off",
-                description: "Through conversion rate optimization, more of your leads turn into paying customers.",
+                description: "Through optimizing your conversion rate, more of your leads turn into paying customers.",
               },
             ].map((item, i) => (
               <div
@@ -229,10 +229,10 @@ export default function Home() {
           {/* Removed background warm red ambient glow */}
           <div className="max-w-[1350px] mx-auto text-center px-6 md:px-12 flex flex-col items-center justify-center z-10">
             <h2 className="text-[36px] md:text-[48px] lg:text-[56px] font-black text-[#0C0C0C] mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
-              Start With A <span className="text-[#EE0000]">Free 4-week Plan</span>
+              Start With A <span className="text-[#EE0000]">FREE Strategy</span>
             </h2>
             <p className="mb-8 text-[17px] md:text-[18px] leading-relaxed font-medium max-w-xl text-[#0C0C0C]">
-              Fill out a form (takes 5 min) and receive a <strong>READY TO USE</strong> personalized plan.
+              Fill out a form (takes 5 min) and receive a <strong>READY TO USE</strong> personalized system you can use in your business <strong>IMMEDIATELY</strong>.
             </p>
             <Link
               className="btn-on-light group shadow-[0_15px_35px_rgba(226,50,50,0.25)] hover:shadow-[0_20px_45px_rgba(226,50,50,0.4)] transition-all duration-300"
