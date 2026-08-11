@@ -10,7 +10,7 @@
 
   --color-bg-main: #0C0C0C;
   --color-text-main: #F0F3F5;
-  --color-accent-red: #EE0000;
+  --color-accent-red: #AE0101;
 }
 
 html,
@@ -83,7 +83,7 @@ h3.question-headline,
 
 .inverted-section .text-primary-accent,
 .inverted-section span.text-primary-accent {
-  color: #EE0000 !important;
+  color: #AE0101 !important;
 }
 
 .inverted-section .watermark-number {
@@ -173,7 +173,7 @@ h3.question-headline,
 }
 
 .btn-solid-black:hover {
-  background-color: #EE0000;
+  background-color: #AE0101;
   color: #FFFFFF;
   box-shadow: 0 12px 35px rgba(226, 50, 50, 0.4);
   transform: translateY(-2px);
@@ -222,10 +222,10 @@ li {
   --color-surface: #F0F3F5;
   --color-surface-dim: #F0F3F5;
   --color-surface-container-lowest: #F0F3F5;
-  --color-primary: #EE0000;
-  --color-primary-fixed: #EE0000;
-  --color-tertiary: #EE0000;
-  --color-outline: #EE0000;
+  --color-primary: #AE0101;
+  --color-primary-fixed: #AE0101;
+  --color-tertiary: #AE0101;
+  --color-outline: #AE0101;
 
   --spacing-unit: 8px;
   --spacing-margin-desktop: 40px;
