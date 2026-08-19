@@ -40,13 +40,13 @@ export default function Home() {
           {/* Center: Nav links — phone-only hidden */}
           <nav className="flex max-sm:hidden absolute left-1/2 -translate-x-1/2 items-center gap-10">
             <Link
-              className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#AE0101] transition-colors tracking-widest uppercase"
+              className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#c90101] transition-colors tracking-widest uppercase"
               href="#how-it-works"
             >
               Services
             </Link>
             <Link
-              className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#AE0101] transition-colors tracking-widest uppercase"
+              className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#c90101] transition-colors tracking-widest uppercase"
               href="/form"
             >
               Contact
@@ -56,7 +56,7 @@ export default function Home() {
           {/* Right: CTA text link — phone-only hidden */}
           <div className="ml-auto flex max-sm:hidden items-center">
             <Link
-              className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#AE0101] transition-colors tracking-widest uppercase"
+              className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#c90101] transition-colors tracking-widest uppercase"
               href="/form"
             >
               Get Your Free Strategy →
@@ -73,7 +73,7 @@ export default function Home() {
           <section className="min-h-[110vh] max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-center justify-center pt-36 pb-36 md:pt-48 md:pb-36 lg:pt-56 lg:pb-48 text-center relative z-10">
 
             <h1 className="hero-headline text-[46px] md:text-[58px] lg:text-[66px] font-extrabold text-[#0C0C0C] mb-6 md:mb-8 max-w-4xl mx-auto tracking-tighter leading-[1.08] md:leading-tight">
-            Turn Strangers Into <span className="text-[#AE0101]">PAYING CUSTOMERS</span>
+            Turn Strangers Into <span className="text-[#c90101]">PAYING CUSTOMERS</span>
           </h1>
           <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#313131] max-w-2xl mx-auto mb-8 md:mb-10">
             Not enough people buying from you? We implement the exact acquisition system 7-figure businesses use.
@@ -93,7 +93,7 @@ export default function Home() {
           {/* Removed background warm red ambient glows */}
           <div className="max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-center relative z-10">
             <h2 className="text-[46px] md:text-[58px] lg:text-[66px] font-black text-[#0C0C0C] mb-16 md:mb-24 text-center tracking-tighter leading-tight">
-              Struggling With <span className="text-[#AE0101]">ANY Of These?</span>
+              Struggling With <span className="text-[#c90101]">ANY Of These?</span>
             </h2>
 
             {/* 3 Problems in the same row - Perfectly aligned elements */}
@@ -111,7 +111,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="w-16 h-1.5 bg-[#AE0101] rounded-full my-2 flex-shrink-0" />
+                <div className="w-16 h-1.5 bg-[#c90101] rounded-full my-2 flex-shrink-0" />
 
                 <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
                   <p className="font-body-lg text-[17px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
@@ -133,7 +133,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="w-16 h-1.5 bg-[#AE0101] rounded-full my-2 flex-shrink-0" />
+                <div className="w-16 h-1.5 bg-[#c90101] rounded-full my-2 flex-shrink-0" />
 
                 <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
                   <p className="font-body-lg text-[17px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
@@ -155,7 +155,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="w-16 h-1.5 bg-[#AE0101] rounded-full my-2 flex-shrink-0" />
+                <div className="w-16 h-1.5 bg-[#c90101] rounded-full my-2 flex-shrink-0" />
 
                 <div className="min-h-[60px] md:min-h-[80px] flex items-start justify-center w-full max-w-[340px]">
                   <p className="font-body-lg text-[17px] md:text-[18px] leading-relaxed text-[#0C0C0C]">
@@ -173,7 +173,7 @@ export default function Home() {
           
           <div className="text-center max-w-4xl mx-auto mb-10 md:mb-16 lg:mb-24">
             <h2 className="text-[46px] md:text-[58px] lg:text-[66px] font-black text-[#0C0C0C] mb-4 md:mb-6 tracking-tighter leading-tight">
-              Here&apos;s How we <span className="text-[#AE0101]">FIX</span> that
+              Here&apos;s How we <span className="text-[#c90101]">FIX</span> that
             </h2>
           </div>
 
@@ -202,16 +202,16 @@ export default function Home() {
 
                 <div className="flex flex-col gap-3 md:gap-4 lg:gap-6 relative z-10">
                   <div className="flex items-center justify-start">
-                    <span className="font-headline-md text-[28px] md:text-[42px] lg:text-[54px] font-black text-[#0C0C0C] group-hover:text-[#AE0101] transition-colors duration-500 select-none tracking-tighter leading-none">
+                    <span className="font-headline-md text-[28px] md:text-[42px] lg:text-[54px] font-black text-[#0C0C0C] group-hover:text-[#c90101] transition-colors duration-500 select-none tracking-tighter leading-none">
                       {item.number}
                     </span>
                   </div>
 
                   <div className="flex flex-col gap-2 md:gap-3 lg:gap-4">
-                    <h3 className="font-headline-md text-[24px] md:text-[25px] lg:text-[32px] font-bold text-[#0C0C0C] tracking-tight group-hover:text-[#AE0101] transition-colors duration-300">
+                    <h3 className="font-headline-md text-[24px] md:text-[25px] lg:text-[32px] font-bold text-[#0C0C0C] tracking-tight group-hover:text-[#c90101] transition-colors duration-300">
                       {item.title}
                     </h3>
-                    <div className="w-8 md:w-10 lg:w-12 h-0.5 lg:h-1 bg-[#AE0101] rounded-full group-hover:w-24 transition-all duration-500" />
+                    <div className="w-8 md:w-10 lg:w-12 h-0.5 lg:h-1 bg-[#c90101] rounded-full group-hover:w-24 transition-all duration-500" />
                   </div>
 
                   <p className="font-body-lg text-[17px] md:text-[15px] lg:text-[18px] text-[#313131] leading-relaxed">
@@ -229,13 +229,13 @@ export default function Home() {
           {/* Removed background warm red ambient glow */}
           <div className="max-w-[1350px] mx-auto text-center px-6 md:px-12 flex flex-col items-center justify-center z-10">
             <h2 className="text-[46px] md:text-[58px] lg:text-[66px] font-black text-[#0C0C0C] mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
-              Start With A <span className="text-[#AE0101]">FREE Strategy</span>
+              Start With A <span className="text-[#c90101]">FREE Strategy</span>
             </h2>
             <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#313131] max-w-2xl mx-auto mb-8 md:mb-10">
               Fill out a form (takes 5 min) and receive a <strong>READY TO USE</strong> personalized system you can use in your business <strong>IMMEDIATELY</strong>.
             </p>
             <Link
-              className="btn-on-light group shadow-[0_15px_35px_rgba(174,1,1,0.25)] hover:shadow-[0_20px_45px_rgba(174,1,1,0.4)] transition-all duration-300"
+              className="btn-on-light group shadow-[0_15px_35px_rgba(201,1,1,0.25)] hover:shadow-[0_20px_45px_rgba(201,1,1,0.4)] transition-all duration-300"
               href="/form"
             >
               Get Yours
@@ -265,13 +265,13 @@ export default function Home() {
           {/* Center: Terms of Service & Privacy Policy */}
           <nav className="flex flex-wrap justify-center gap-8">
             <Link
-              className="font-label-md text-[14px] md:text-[13px] text-[#313131] hover:text-[#AE0101] transition-colors duration-300 uppercase tracking-widest font-semibold"
+              className="font-label-md text-[14px] md:text-[13px] text-[#313131] hover:text-[#c90101] transition-colors duration-300 uppercase tracking-widest font-semibold"
               href="#"
             >
               Terms of Service
             </Link>
             <Link
-              className="font-label-md text-[14px] md:text-[13px] text-[#313131] hover:text-[#AE0101] transition-colors duration-300 uppercase tracking-widest font-semibold"
+              className="font-label-md text-[14px] md:text-[13px] text-[#313131] hover:text-[#c90101] transition-colors duration-300 uppercase tracking-widest font-semibold"
               href="#"
             >
               Privacy Policy

@@ -156,7 +156,7 @@ export default function QuestionnairePage() {
             {/* Form */}
             <div className="w-full max-w-[640px] text-left">
               {errorMsg && (
-                <div className="mb-2.5 text-[#AE0101] font-bold text-xs text-center">{errorMsg}</div>
+                <div className="mb-2.5 text-[#c90101] font-bold text-xs text-center">{errorMsg}</div>
               )}
 
               <form onSubmit={handlePage1Next} className="space-y-4 sm:space-y-5">
@@ -269,7 +269,7 @@ export default function QuestionnairePage() {
             {/* Options / Input */}
             <div className="w-full max-w-[480px] text-left">
               {errorMsg && (
-                <div className="mb-2.5 text-[#AE0101] font-bold text-xs text-center">{errorMsg}</div>
+                <div className="mb-2.5 text-[#c90101] font-bold text-xs text-center">{errorMsg}</div>
               )}
 
               <div className="space-y-2 sm:space-y-2.5">

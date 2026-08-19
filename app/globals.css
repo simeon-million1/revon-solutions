@@ -10,7 +10,7 @@
 
   --color-bg-main: #0C0C0C;
   --color-text-main: #F0F3F5;
-  --color-accent-red: #AE0101;
+  --color-accent-red: #c90101;
 }
 
 html,
@@ -83,11 +83,11 @@ h3.question-headline,
 
 .inverted-section .text-primary-accent,
 .inverted-section span.text-primary-accent {
-  color: #AE0101 !important;
+  color: #c90101 !important;
 }
 
 .inverted-section .watermark-number {
-  color: rgba(226, 50, 50, 0.08) !important;
+  color: rgba(201, 1, 1, 0.08) !important;
   font-family: 'Stack Sans Notch', sans-serif !important;
   font-weight: 900 !important;
 }
@@ -110,7 +110,7 @@ h3.question-headline,
   background-color: transparent;
   color: #F0F3F5;
   border: 1.5px solid rgba(240, 243, 245, 0.6);
-  box-shadow: 0 0 20px rgba(226, 50, 50, 0.3);
+  box-shadow: 0 0 20px rgba(201, 1, 1, 0.3);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -121,7 +121,7 @@ h3.question-headline,
   background-color: #FFFFFF;
   color: #0C0C0C;
   border: 1.5px solid #0C0C0C;
-  box-shadow: 0 5px 30px rgba(226, 50, 50, 0.5);
+  box-shadow: 0 5px 30px rgba(201, 1, 1, 0.5);
   transform: translateY(-2px);
 }
 
@@ -138,7 +138,7 @@ h3.question-headline,
   background-color: #FFFFFF;
   color: #0C0C0C;
   border: none;
-  box-shadow: 0 10px 30px rgba(226, 50, 50, 0.4);
+  box-shadow: 0 10px 30px rgba(201, 1, 1, 0.4);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -148,7 +148,7 @@ h3.question-headline,
 .btn-solid-white:hover {
   background-color: #F0F3F5;
   color: #0C0C0C;
-  box-shadow: 0 12px 35px rgba(226, 50, 50, 0.6);
+  box-shadow: 0 12px 35px rgba(201, 1, 1, 0.6);
   transform: translateY(-2px);
 }
 
@@ -165,7 +165,7 @@ h3.question-headline,
   background-color: #0C0C0C;
   color: #FFFFFF;
   border: none;
-  box-shadow: 0 10px 30px rgba(226, 50, 50, 0.2);
+  box-shadow: 0 10px 30px rgba(201, 1, 1, 0.2);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -173,9 +173,9 @@ h3.question-headline,
 }
 
 .btn-solid-black:hover {
-  background-color: #AE0101;
+  background-color: #c90101;
   color: #FFFFFF;
-  box-shadow: 0 12px 35px rgba(226, 50, 50, 0.4);
+  box-shadow: 0 12px 35px rgba(201, 1, 1, 0.4);
   transform: translateY(-2px);
 }
 
@@ -192,7 +192,7 @@ h3.question-headline,
   background-color: transparent;
   color: #0C0C0C;
   border: 1.5px solid #0C0C0C;
-  box-shadow: 0 0 20px rgba(226, 50, 50, 0.15);
+  box-shadow: 0 0 20px rgba(201, 1, 1, 0.15);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -203,7 +203,7 @@ h3.question-headline,
   background-color: #0C0C0C;
   color: #FFFFFF;
   border: 1.5px solid #0C0C0C;
-  box-shadow: 0 5px 30px rgba(226, 50, 50, 0.5);
+  box-shadow: 0 5px 30px rgba(201, 1, 1, 0.5);
   transform: translateY(-2px);
 }
 
@@ -222,10 +222,10 @@ li {
   --color-surface: #F0F3F5;
   --color-surface-dim: #F0F3F5;
   --color-surface-container-lowest: #F0F3F5;
-  --color-primary: #AE0101;
-  --color-primary-fixed: #AE0101;
-  --color-tertiary: #AE0101;
-  --color-outline: #AE0101;
+  --color-primary: #c90101;
+  --color-primary-fixed: #c90101;
+  --color-tertiary: #c90101;
+  --color-outline: #c90101;
 
   --spacing-unit: 8px;
   --spacing-margin-desktop: 40px;
@@ -306,14 +306,14 @@ li {
   .glass-panel:hover {
     background: transparent !important;
     border: 1px solid rgba(12, 12, 12, 0.3) !important;
-    box-shadow: 0 0 25px rgba(226, 50, 50, 0.15) !important;
+    box-shadow: 0 0 25px rgba(201, 1, 1, 0.15) !important;
   }
 
   .primary-cta {
     background-color: transparent !important;
     color: #F0F3F5 !important;
     border: 1.5px solid rgba(240, 243, 245, 0.6) !important;
-    box-shadow: 0 0 20px rgba(226, 50, 50, 0.3) !important;
+    box-shadow: 0 0 20px rgba(201, 1, 1, 0.3) !important;
     transition: all 0.3s ease !important;
   }
 
@@ -321,7 +321,7 @@ li {
     background-color: rgba(240, 243, 245, 0.1) !important;
     color: #ffffff !important;
     border: 1.5px solid #ffffff !important;
-    box-shadow: 0 0 30px rgba(226, 50, 50, 0.6) !important;
+    box-shadow: 0 0 30px rgba(201, 1, 1, 0.6) !important;
     transform: translateY(-2px) !important;
   }
 
@@ -384,7 +384,7 @@ a.primary-cta-inverted,
   background-color: transparent !important;
   color: #0C0C0C !important;
   border: 1.5px solid #0C0C0C !important;
-  box-shadow: 0 0 25px rgba(226, 50, 50, 0.3) !important;
+  box-shadow: 0 0 25px rgba(201, 1, 1, 0.3) !important;
 }
 
 .inverted-section a.primary-cta:hover,
@@ -396,7 +396,7 @@ a.primary-cta-inverted:hover,
   background-color: #0C0C0C !important;
   color: #FFFFFF !important;
   border: 1.5px solid #0C0C0C !important;
-  box-shadow: 0 5px 30px rgba(226, 50, 50, 0.6) !important;
+  box-shadow: 0 5px 30px rgba(201, 1, 1, 0.6) !important;
   transform: translateY(-2px) !important;
 }
 
