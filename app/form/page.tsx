@@ -90,14 +90,14 @@ export default function QuestionnairePage() {
   };
 
   return (
-    <div className="h-screen max-h-screen w-full bg-[#FFFFFF] flex flex-col items-center justify-between font-body-lg overflow-hidden select-none">
+    <div className="h-screen max-h-screen w-full bg-[#F0F3F5] flex flex-col items-center justify-between font-body-lg overflow-hidden select-none">
       {/* 
         CRITICAL OVERRIDES: Force strictly 100vh white screen with black text and zero scroll.
         Includes high-intensity transition keyframes for dynamic step changes.
       */}
       <style>{`
         html, body {
-          background-color: #FFFFFF !important;
+          background-color: #F0F3F5 !important;
           color: #0C0C0C !important;
           height: 100vh !important;
           max-height: 100vh !important;
@@ -127,16 +127,12 @@ export default function QuestionnairePage() {
       `}</style>
       
       {/* Minimal Header */}
-      <header className="w-full py-4 px-6 md:px-12 flex justify-between items-center flex-shrink-0 bg-[#FFFFFF] z-10">
-        <Link className="brand-logo flex items-center gap-3 text-[22px] sm:text-[24px] font-black tracking-tight" href="/">
-          {page === 3 && (
-            <>
-              <Image src="/logo.svg" alt="Logo" width={30} height={30} className="h-[30px] w-auto brightness-0" />
-              <span className="override-black font-black">REVON SOLUTIONS</span>
-            </>
-          )}
+      <header className="w-full py-4 px-6 md:px-12 flex justify-between items-center flex-shrink-0 bg-[#F0F3F5] z-10 border-b border-[#0C0C0C]/10">
+        <Link className="brand-logo flex items-center gap-2.5 text-[22px] md:text-[24px] font-black tracking-tighter text-[#0C0C0C] whitespace-nowrap" href="/">
+          <Image src="/logo.svg" alt="REVON SOLUTIONS Logo" width={30} height={30} className="h-[28px] w-auto brightness-0" />
+          <span className="override-black">REVON SOLUTIONS</span>
         </Link>
-        <Link href="/" className="override-black flex items-center gap-1.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider hover:opacity-70 transition-opacity">
+        <Link href="/" className="override-black flex items-center gap-1.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider hover:text-[#c90101] transition-colors">
           <ArrowLeft className="w-4 h-4 stroke-[2.5]" />
           <span>Back</span>
         </Link>
@@ -148,10 +144,14 @@ export default function QuestionnairePage() {
         {/* PAGE 1: BASIC INFO */}
         {page === 1 && (
           <div key="page-1" className="animate-step w-full max-w-[700px] mx-auto flex flex-col items-center text-center -mt-12 sm:-mt-20">
+            {/* Red accent label */}
+            <span className="inline-block text-[#c90101] text-[11px] font-black uppercase tracking-[0.2em] mb-4">Get Started</span>
             {/* Centered Headline */}
-            <h1 className="override-black text-[30px] sm:text-[38px] md:text-[46px] font-black tracking-tight leading-[1.1] mb-12 sm:mb-16 w-full max-w-[600px]">
-              Where should we send your free strategy?
+            <h1 className="override-black text-[30px] sm:text-[38px] md:text-[46px] font-black tracking-tight leading-[1.1] mb-4 w-full max-w-[600px]">
+              Find Your Best Growth Opportunities
             </h1>
+            {/* Red divider */}
+            <div className="w-12 h-1 bg-[#c90101] rounded-full mb-10 sm:mb-12" />
 
             {/* Form */}
             <div className="w-full max-w-[640px] text-left">
@@ -171,7 +171,7 @@ export default function QuestionnairePage() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="John Doe"
-                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
+                      className="override-black w-full bg-[#F0F3F5] border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
                     />
                   </div>
 
@@ -185,7 +185,7 @@ export default function QuestionnairePage() {
                       value={businessName}
                       onChange={(e) => setBusinessName(e.target.value)}
                       placeholder="Acme Corp"
-                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
+                      className="override-black w-full bg-[#F0F3F5] border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
                     />
                   </div>
 
@@ -199,7 +199,7 @@ export default function QuestionnairePage() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="john@acmecorp.com"
-                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
+                      className="override-black w-full bg-[#F0F3F5] border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
                     />
                   </div>
 
@@ -212,7 +212,7 @@ export default function QuestionnairePage() {
                       value={websiteUrl}
                       onChange={(e) => setWebsiteUrl(e.target.value)}
                       placeholder="https://yourwebsite.com or @social"
-                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
+                      className="override-black w-full bg-[#F0F3F5] border border-[#0C0C0C]/35 rounded-full px-5 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 placeholder:text-[#0C0C0C]/40 transition-none"
                     />
                   </div>
                 </div>
@@ -222,7 +222,7 @@ export default function QuestionnairePage() {
                   <button
                     type="submit"
                     style={{ padding: "12px 24px" }}
-                    className="override-white bg-[#0C0C0C] font-black text-xs sm:text-sm uppercase tracking-wider rounded-full hover:opacity-85 transition-all inline-flex items-center justify-center gap-2.5 cursor-pointer shadow-none"
+                    className="override-white bg-[#c90101] font-black text-xs sm:text-sm uppercase tracking-wider rounded-full hover:opacity-85 transition-all inline-flex items-center justify-center gap-2.5 cursor-pointer shadow-none"
                   >
                     <span>Next</span>
                     <ArrowRight className="w-4 h-4 text-white stroke-[2.5]" />
@@ -237,8 +237,12 @@ export default function QuestionnairePage() {
         {page === 2 && (
           <div key={`page-2-q-${qIndex}`} className="animate-step w-full max-w-[700px] mx-auto flex flex-col items-center text-center">
             
-            {/* Centered Headline */}
+            {/* Question counter + headline */}
             <div className="w-full mb-5 sm:mb-7 max-w-[620px]">
+              {/* Red accent label */}
+              <span className="inline-block text-[#c90101] text-[11px] font-black uppercase tracking-[0.2em] mb-3">
+                Question {qIndex + 1} of 5
+              </span>
               {qIndex === 0 && (
                 <h1 className="override-black text-[28px] sm:text-[36px] md:text-[40px] font-black tracking-tight leading-[1.15]">
                   What do you sell? Say it in one short sentence.
@@ -251,19 +255,21 @@ export default function QuestionnairePage() {
               )}
               {qIndex === 2 && (
                 <h1 className="override-black text-[28px] sm:text-[36px] md:text-[40px] font-black tracking-tight leading-[1.15]">
-                  How many new clients do you get each month right now?
+                  How many new clients do you get each month on average?
                 </h1>
               )}
               {qIndex === 3 && (
                 <h1 className="override-black text-[28px] sm:text-[36px] md:text-[40px] font-black tracking-tight leading-[1.15]">
-                  When someone shows they are interested, what do you do next?
+                  When someone shows interest, what do you do next?
                 </h1>
               )}
               {qIndex === 4 && (
                 <h1 className="override-black text-[28px] sm:text-[36px] md:text-[40px] font-black tracking-tight leading-[1.15]">
-                  How fast do you follow up with a new lead?
+                  How fast do you respond to a new lead?
                 </h1>
               )}
+              {/* Red divider bar below headline */}
+              <div className="w-10 h-1 bg-[#c90101] rounded-full mt-4 mx-auto" />
             </div>
 
             {/* Options / Input */}
@@ -279,32 +285,41 @@ export default function QuestionnairePage() {
                     type="text"
                     value={whatWeSell}
                     onChange={(e) => setWhatWeSell(e.target.value)}
-                    placeholder="e.g., Lead gen for real estate agents"
-                    className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none"
+                    placeholder="Example: Tax preparation that helps small businesses save money"
+                    className="override-black w-full bg-[#F0F3F5] border border-[#0C0C0C]/35 rounded-3xl px-8 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none"
                     autoFocus
                   />
                 )}
 
                 {/* Q2 */}
                 {qIndex === 1 && (
-                  <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
-                    {["Ads", "Cold outreach", "Content", "Referrals", "Not sure"].map((opt) => {
-                      const selected = clientSource === opt;
-                      return (
-                        <button
-                          key={opt}
-                          type="button"
-                          onClick={() => setClientSource(opt)}
-                          className={`py-3 px-2 sm:px-3 rounded-full border font-extrabold text-xs sm:text-[14px] text-center transition-all cursor-pointer ${
-                            selected
-                              ? "override-white bg-[#0C0C0C] border-[#0C0C0C]"
-                              : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
-                          } ${opt === "Not sure" ? "col-span-2 w-full sm:w-[calc(50%-6px)] mx-auto" : "w-full"}`}
-                        >
-                          {opt}
-                        </button>
-                      );
-                    })}
+                  <div className="flex flex-col gap-2.5 sm:gap-3">
+                    <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
+                      {["Ads", "Cold outreach", "Content", "Referrals"].map((opt) => {
+                        const selected = clientSource === opt;
+                        return (
+                          <button
+                            key={opt}
+                            type="button"
+                            onClick={() => setClientSource(opt)}
+                            className={`py-3 px-5 rounded-full border font-extrabold text-xs sm:text-[14px] text-center transition-all cursor-pointer w-full ${
+                              selected
+                                ? "override-white bg-[#c90101] border-[#c90101]"
+                                : "override-black bg-[#F0F3F5] border-[#0C0C0C]/35 hover:border-[#c90101]/50 hover:bg-[#c90101]/5"
+                            }`}
+                          >
+                            {opt}
+                          </button>
+                        );
+                      })}
+                    </div>
+                    <input
+                      type="text"
+                      value={!["Ads", "Cold outreach", "Content", "Referrals"].includes(clientSource) ? clientSource : ""}
+                      onChange={(e) => setClientSource(e.target.value)}
+                      placeholder="Or type where they come from..."
+                      className="override-black w-full bg-[#F0F3F5] border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none text-center"
+                    />
                   </div>
                 )}
 
@@ -316,7 +331,7 @@ export default function QuestionnairePage() {
                       value={monthlyClients}
                       onChange={(e) => setMonthlyClients(e.target.value)}
                       placeholder="Type your answer (e.g., 5 clients)..."
-                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none"
+                      className="override-black w-full bg-[#F0F3F5] border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none"
                       autoFocus
                     />
                   </div>
@@ -333,10 +348,10 @@ export default function QuestionnairePage() {
                             key={opt}
                             type="button"
                             onClick={() => setNextAction(opt)}
-                            className={`py-3 px-2 sm:px-3 rounded-full border font-extrabold text-xs sm:text-[14px] text-center transition-all cursor-pointer ${
+                            className={`py-3 px-5 rounded-full border font-extrabold text-xs sm:text-[14px] text-center transition-all cursor-pointer ${
                               selected
-                                ? "override-white bg-[#0C0C0C] border-[#0C0C0C]"
-                                : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
+                                ? "override-white bg-[#c90101] border-[#c90101]"
+                                : "override-black bg-[#F0F3F5] border-[#0C0C0C]/35 hover:border-[#c90101]/50 hover:bg-[#c90101]/5"
                             }`}
                           >
                             {opt}
@@ -349,7 +364,7 @@ export default function QuestionnairePage() {
                       value={!["I call them", "I email them"].includes(nextAction) ? nextAction : ""}
                       onChange={(e) => setNextAction(e.target.value)}
                       placeholder="Or type what you do..."
-                      className="override-black w-full bg-white border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none text-center"
+                      className="override-black w-full bg-[#F0F3F5] border border-[#0C0C0C]/35 rounded-full px-6 py-3 sm:py-3.5 font-bold text-sm sm:text-[15px] focus:outline-none focus:ring-0 focus:border-[#0C0C0C]/35 transition-none text-center"
                     />
                   </div>
                 )}
@@ -357,17 +372,17 @@ export default function QuestionnairePage() {
                 {/* Q5 */}
                 {qIndex === 4 && (
                   <div className="flex flex-col gap-2.5">
-                    {["Same day", "1 - 2 days", "3+ days"].map((opt) => {
+                    {["In 10 minutes", "In few hours", "In a day or more"].map((opt) => {
                       const selected = followUpSpeed === opt;
                       return (
                         <button
                           key={opt}
                           type="button"
                           onClick={() => setFollowUpSpeed(opt)}
-                          className={`py-3.5 px-6 rounded-full border font-extrabold text-sm sm:text-[15px] text-center transition-all cursor-pointer ${
+                          className={`py-3.5 px-8 rounded-full border font-extrabold text-sm sm:text-[15px] text-center transition-all cursor-pointer max-w-[280px] mx-auto w-full ${
                             selected
-                              ? "override-white bg-[#0C0C0C] border-[#0C0C0C]"
-                              : "override-black bg-white border-[#0C0C0C]/35 hover:bg-black/5"
+                              ? "override-white bg-[#c90101] border-[#c90101]"
+                              : "override-black bg-[#F0F3F5] border-[#0C0C0C]/35 hover:border-[#c90101]/50 hover:bg-[#c90101]/5"
                           }`}
                         >
                           {opt}
@@ -394,7 +409,7 @@ export default function QuestionnairePage() {
                     onClick={handleQNext}
                     disabled={isSubmitting}
                     style={{ padding: "12px 24px" }}
-                    className="override-white bg-[#0C0C0C] font-black text-xs sm:text-sm uppercase tracking-wider rounded-full hover:opacity-85 transition-all inline-flex items-center justify-center gap-2 cursor-pointer shadow-none disabled:opacity-50"
+                    className="override-white bg-[#c90101] font-black text-xs sm:text-sm uppercase tracking-wider rounded-full hover:opacity-85 transition-all inline-flex items-center justify-center gap-2 cursor-pointer shadow-none disabled:opacity-50"
                   >
                     <span>{isSubmitting ? "Submitting..." : qIndex < 4 ? "Next" : "Submit"}</span>
                     <ArrowRight className="w-4 h-4 text-white stroke-[2.5]" />
@@ -410,12 +425,12 @@ export default function QuestionnairePage() {
                   return (
                     <div
                       key={stepIdx}
-                      className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all duration-300 ${
+                      className={`rounded-full transition-all duration-300 ${
                         isCurrent
-                          ? "bg-[#0C0C0C] scale-125"
+                          ? "w-6 h-2 sm:w-8 sm:h-2 bg-[#c90101]"
                           : isCompletedOrCurrent
-                          ? "bg-[#0C0C0C]/60"
-                          : "bg-[#0C0C0C]/15"
+                          ? "w-2 h-2 sm:w-2.5 sm:h-2.5 bg-[#c90101]/50"
+                          : "w-2 h-2 sm:w-2.5 sm:h-2.5 bg-[#0C0C0C]/15"
                       }`}
                     />
                   );
@@ -431,10 +446,12 @@ export default function QuestionnairePage() {
             
             {/* Left Side */}
             <div className="flex flex-col items-start justify-center pr-0 md:pr-4 lg:pr-8 max-w-[620px] mx-auto md:mx-0 md:ml-auto">
-              <h1 className="override-black text-[34px] sm:text-[46px] lg:text-[54px] font-black tracking-tight leading-[1.08] mb-6 sm:mb-8">
+              {/* Red accent label */}
+              <span className="inline-block text-[#c90101] text-[11px] font-black uppercase tracking-[0.2em] mb-4">Strategy Ready</span>
+              <h1 className="override-black text-[34px] sm:text-[46px] lg:text-[54px] font-black tracking-tight leading-[1.08] mb-3 sm:mb-4">
                 Your strategy is on the way!
               </h1>
-              
+              <div className="w-12 h-1 bg-[#c90101] rounded-full mb-5 sm:mb-6" />
               <p className="override-black text-base sm:text-lg md:text-xl font-medium max-w-[540px] opacity-80 leading-relaxed">
                 We are building your personalized strategy right now. Look for an email from us soon!
               </p>
@@ -446,18 +463,18 @@ export default function QuestionnairePage() {
                 Here&apos;s what you get
               </h3>
 
-              <ol className="space-y-6 sm:space-y-7 text-base sm:text-lg md:text-[18px] font-medium leading-relaxed list-none m-0 p-0 mb-8 sm:mb-10">
-                <li className="override-black flex items-start gap-3 sm:gap-4">
-                  <span className="font-bold flex-shrink-0">1.</span>
-                  <span>A custom video showing you exactly where leads are getting lost in your system.</span>
+              <ol className="space-y-5 sm:space-y-6 text-base sm:text-lg md:text-[17px] font-medium leading-relaxed list-none m-0 p-0 mb-8 sm:mb-10">
+                <li className="override-black flex items-start gap-4">
+                  <span className="flex-shrink-0 font-black text-[#c90101] text-lg">1.</span>
+                  <span className="pt-0.5">A custom video showing you exactly where leads are lost.</span>
                 </li>
-                <li className="override-black flex items-start gap-3 sm:gap-4">
-                  <span className="font-bold flex-shrink-0">2.</span>
-                  <span>Simple fixes to turn those leads into more paying customers.</span>
+                <li className="override-black flex items-start gap-4">
+                  <span className="flex-shrink-0 font-black text-[#c90101] text-lg">2.</span>
+                  <span className="pt-0.5">Simple fixes to turn more of those leads into clients.</span>
                 </li>
-                <li className="override-black flex items-start gap-3 sm:gap-4">
-                  <span className="font-bold flex-shrink-0">3.</span>
-                  <span>A 30-day advertising checklist guaranteed to get your more qualified sales conversation.</span>
+                <li className="override-black flex items-start gap-4">
+                  <span className="flex-shrink-0 font-black text-[#c90101] text-lg">3.</span>
+                  <span className="pt-0.5">A 30-day advertising checklist guaranteed to get your more qualified appointments.</span>
                 </li>
               </ol>
 
@@ -477,7 +494,7 @@ export default function QuestionnairePage() {
       </main>
       
       {/* Tiny spacer for vertical balancing in 100vh layout */}
-      <div className="h-2 w-full flex-shrink-0 bg-[#FFFFFF]" />
+      <div className="h-2 w-full flex-shrink-0 bg-[#F0F3F5]" />
     </div>
   );
 }

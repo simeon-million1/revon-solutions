@@ -35,6 +35,18 @@ body {
   scrollbar-width: none !important;
 }
 
+/* ── Remove browser autofill blue background ── */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #F0F3F5 inset !important;
+  box-shadow: 0 0 0 1000px #F0F3F5 inset !important;
+  -webkit-text-fill-color: #0C0C0C !important;
+  background-color: #F0F3F5 !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
 /* 1. All Headlines & Subheadlines: Google Sans Flex (500 weight), Title Case */
 h1,
 h2,

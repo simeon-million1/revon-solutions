@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://revonsolutions.com"),
-  title: "Predictable Client Acquisition | REVON SOLUTIONS",
+  title: "Client Acquisition Agency | REVON SOLUTIONS",
   description: "We build your business a proven 7-figure acquisition system — guaranteed qualified leads, or we work for free.",
   applicationName: "REVON SOLUTIONS",
   alternates: {
