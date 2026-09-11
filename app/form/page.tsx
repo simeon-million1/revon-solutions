@@ -459,7 +459,7 @@ export default function QuestionnairePage() {
 
             {/* Right Side */}
             <div className="flex flex-col items-start justify-center pl-0 md:pl-4 lg:pl-8 max-w-[640px] mx-auto md:mx-0 md:mr-auto">
-              <h3 className="override-black font-black text-2xl sm:text-3xl md:text-[32px] mb-6 sm:mb-8 tracking-tight">
+              <h3 className="override-black font-black text-[19px] sm:text-[25px] md:text-[27px] mb-6 sm:mb-8 tracking-tight">
                 Here&apos;s what you get
               </h3>
 

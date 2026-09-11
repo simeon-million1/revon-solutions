@@ -92,7 +92,7 @@ export default function Home() {
         <section className="w-full h-screen inverted-section bg-[#F0F3F5] py-12 md:py-16 relative z-10 overflow-hidden border-y border-white/10 shadow-2xl flex items-center">
           {/* Removed background warm red ambient glows */}
           <div className="max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-center relative z-10 w-full">
-            <h2 className="text-[36px] md:text-[48px] lg:text-[56px] font-black text-[#0C0C0C] mb-14 md:mb-20 text-center tracking-tighter leading-tight">
+            <h2 className="text-[31px] md:text-[43px] lg:text-[51px] font-black text-[#0C0C0C] mb-14 md:mb-20 text-center tracking-tighter leading-tight">
               Do You Struggle With <span className="text-[#c90101]">ANY of These?</span>
             </h2>
 
@@ -105,7 +105,7 @@ export default function Home() {
                     01
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
-                    <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
+                    <h3 className="question-headline text-[19px] md:text-[29px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
                       Wrong People
                     </h3>
                   </div>
@@ -127,7 +127,7 @@ export default function Home() {
                     02
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
-                    <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
+                    <h3 className="question-headline text-[19px] md:text-[29px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
                       Lost Opportunities
                     </h3>
                   </div>
@@ -149,7 +149,7 @@ export default function Home() {
                     03
                   </div>
                   <div className="min-h-[70px] md:min-h-[95px] flex items-center justify-center w-full px-2">
-                    <h3 className="question-headline text-[24px] md:text-[34px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
+                    <h3 className="question-headline text-[19px] md:text-[29px] font-extrabold leading-[1.15] tracking-tight text-[#0C0C0C]">
                       Inconsistent Months
                     </h3>
                   </div>
@@ -172,7 +172,7 @@ export default function Home() {
 
           <div className="w-full max-w-[1350px] mx-auto flex flex-col">
           <div className="text-center max-w-4xl mx-auto mb-10 md:mb-14">
-            <h2 className="text-[36px] md:text-[48px] lg:text-[56px] font-black text-[#0C0C0C] mb-0 tracking-tighter leading-tight">
+            <h2 className="text-[31px] md:text-[43px] lg:text-[51px] font-black text-[#0C0C0C] mb-0 tracking-tighter leading-tight">
               Here&apos;s How we <span className="text-[#c90101]">FIX</span> that
             </h2>
           </div>
@@ -208,7 +208,7 @@ export default function Home() {
                   </div>
 
                   <div className="flex flex-col gap-1.5 md:gap-2">
-                    <h3 className="font-headline-md text-[24px] md:text-[25px] lg:text-[32px] font-bold text-[#0C0C0C] tracking-tight group-hover:text-[#c90101] transition-colors duration-300">
+                    <h3 className="font-headline-md text-[19px] md:text-[20px] lg:text-[27px] font-bold text-[#0C0C0C] tracking-tight group-hover:text-[#c90101] transition-colors duration-300">
                       {item.title}
                     </h3>
                     <div className="w-8 md:w-10 lg:w-12 h-0.5 lg:h-1 bg-[#c90101] rounded-full group-hover:w-24 transition-all duration-500" />
@@ -229,7 +229,7 @@ export default function Home() {
         <section className="w-full inverted-section bg-[#F0F3F5] py-20 md:py-28 relative z-10 flex flex-col items-center justify-center overflow-hidden border-t border-white/10 shadow-2xl">
           {/* Removed background warm red ambient glow */}
           <div className="max-w-[1350px] mx-auto text-center px-6 md:px-12 flex flex-col items-center justify-center z-10">
-            <h2 className="text-[36px] md:text-[48px] lg:text-[56px] font-black text-[#0C0C0C] mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
+            <h2 className="text-[31px] md:text-[43px] lg:text-[51px] font-black text-[#0C0C0C] mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
               Start With A <span className="text-[#c90101]">FREE Strategy</span>
             </h2>
             <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#313131] max-w-2xl mx-auto mb-8 md:mb-10">
