@@ -31,7 +31,7 @@ export default function Home() {
                 alt="REVON SOLUTIONS Logo"
                 width={30}
                 height={30}
-                className="h-[26px] w-auto brightness-0"
+                className="h-[20px] w-auto brightness-0"
               />
               <span>REVON SOLUTIONS</span>
             </Link>
@@ -256,7 +256,7 @@ export default function Home() {
               alt="REVON SOLUTIONS Logo"
               width={38}
               height={36}
-              className="h-[26px] md:h-[28px] w-auto brightness-0"
+              className="h-[20px] md:h-[22px] w-auto brightness-0"
             />
             <span className="brand-logo font-headline-md text-[22px] md:text-[24px] font-black tracking-tighter text-on-surface whitespace-nowrap">
               REVON SOLUTIONS
