@@ -23,7 +23,7 @@ export default function Home() {
           {/* Left: Logo */}
           <div className="flex items-center">
             <Link
-              className="brand-logo flex items-center gap-2.5 text-[22px] md:text-[24px] font-black tracking-tighter text-[#0C0C0C] whitespace-nowrap"
+              className="brand-logo flex items-center gap-2.5 text-[22px] font-black tracking-tighter text-[#0C0C0C] whitespace-nowrap"
               href="/"
             >
               <Image
@@ -31,7 +31,7 @@ export default function Home() {
                 alt="REVON SOLUTIONS Logo"
                 width={30}
                 height={30}
-                className="h-[20px] w-auto brightness-0"
+                className="h-[24px] w-auto brightness-0"
               />
               <span>REVON SOLUTIONS</span>
             </Link>
@@ -250,15 +250,15 @@ export default function Home() {
       <footer className="w-full bg-background border-t border-black/10 mt-auto relative z-10">
         <div className="max-w-[1350px] mx-auto px-6 md:px-12 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Far Left: Big Logo & REVON SOLUTIONS where container starts */}
-          <div className="flex items-center gap-2.5 md:gap-3">
+          <div className="flex items-center gap-2.5">
             <Image
               src="/logo.svg"
               alt="REVON SOLUTIONS Logo"
               width={38}
               height={36}
-              className="h-[20px] md:h-[22px] w-auto brightness-0"
+              className="h-[24px] w-auto brightness-0"
             />
-            <span className="brand-logo font-headline-md text-[22px] md:text-[24px] font-black tracking-tighter text-on-surface whitespace-nowrap">
+            <span className="brand-logo text-[22px] font-black tracking-tighter text-on-surface whitespace-nowrap">
               REVON SOLUTIONS
             </span>
           </div>
