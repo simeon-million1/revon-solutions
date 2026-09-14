@@ -31,9 +31,9 @@ export default function Home() {
                 alt="REVON SOLUTIONS Logo"
                 width={30}
                 height={30}
-                className="h-[28px] w-auto brightness-0"
+                className="h-[26px] w-auto brightness-0 translate-y-[2px]"
               />
-              <span>REVON SOLUTIONS</span>
+              <span>Revon Solutions</span>
             </Link>
           </div>
 
@@ -256,10 +256,10 @@ export default function Home() {
               alt="REVON SOLUTIONS Logo"
               width={38}
               height={36}
-              className="h-[28px] md:h-[30px] w-auto brightness-0"
+              className="h-[26px] md:h-[28px] w-auto brightness-0 translate-y-[2px]"
             />
             <span className="brand-logo font-headline-md text-[22px] md:text-[24px] font-black tracking-tighter text-on-surface whitespace-nowrap">
-              REVON SOLUTIONS
+              Revon Solutions
             </span>
           </div>
 
@@ -281,7 +281,7 @@ export default function Home() {
 
           {/* Far Right: Copyright on right side of container */}
           <div className="font-body-md text-[14px] md:text-[13px] text-[#313131] opacity-60 font-medium">
-            © 2026 REVON SOLUTIONS. All rights reserved.
+            © 2026 Revon Solutions. All rights reserved.
           </div>
         </div>
       </footer>

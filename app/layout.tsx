@@ -4,23 +4,23 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://revonsolutions.com"),
-  title: "Client Acquisition Agency | REVON SOLUTIONS",
+  title: "Client Acquisition Agency | Revon Solutions",
   description: "We build your business a proven 7-figure acquisition system — guaranteed qualified leads, or we work for free.",
-  applicationName: "REVON SOLUTIONS",
+  applicationName: "Revon Solutions",
   alternates: {
     canonical: "https://revonsolutions.com",
   },
   openGraph: {
-    title: "REVON SOLUTIONS: Predictable Client Acquisition in 8 Weeks",
+    title: "Revon Solutions: Predictable Client Acquisition in 8 Weeks",
     description: "We build your business a proven 7-figure acquisition system — guaranteed qualified leads, or we work for free.",
     url: "https://revonsolutions.com",
-    siteName: "REVON SOLUTIONS",
+    siteName: "Revon Solutions",
     images: [
       {
         url: "/favicon-search.svg",
         width: 800,
         height: 800,
-        alt: "REVON SOLUTIONS Search Logo",
+        alt: "Revon Solutions Search Logo",
       },
     ],
     locale: "en_US",
@@ -49,7 +49,7 @@ export default function RootLayout({
         "@type": "WebSite",
         "@id": "https://revonsolutions.com/#website",
         "url": "https://revonsolutions.com/",
-        "name": "REVON SOLUTIONS",
+        "name": "Revon Solutions",
         "alternateName": ["Revon Solutions", "REVON"],
         "publisher": {
           "@id": "https://revonsolutions.com/#organization",
@@ -58,7 +58,7 @@ export default function RootLayout({
       {
         "@type": "Organization",
         "@id": "https://revonsolutions.com/#organization",
-        "name": "REVON SOLUTIONS",
+        "name": "Revon Solutions",
         "url": "https://revonsolutions.com/",
         "logo": "https://revonsolutions.com/favicon-search.svg",
       },
