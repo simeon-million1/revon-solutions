@@ -69,12 +69,15 @@ h6,
   word-spacing: 0.08em !important;
 }
 
-/* 3. Brand Logo ('REVON SOLUTIONS') Exception: Stack Sans Notch (700 font weight, tighter letter spacing) */
+/* 3. Brand Logo ('REVON SOLUTIONS') Exception: Stack Sans Notch = Space Grotesk (700 font weight, tighter letter spacing) */
 .brand-logo {
-  font-family: 'Stack Sans Notch', sans-serif !important;
+  font-family: 'Space Grotesk', sans-serif !important;
   font-weight: 700 !important;
-  letter-spacing: -0.06em !important;
+  letter-spacing: -0.04em !important;
   text-transform: uppercase !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  line-height: 1 !important;
 }
 
 /* 4. Question / Pain Point Headlines & Inverted Light Section Rules (High Contrast #0C0C0C) */

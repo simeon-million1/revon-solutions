@@ -129,8 +129,8 @@ export default function QuestionnairePage() {
       {/* Minimal Header */}
       <header className="w-full py-4 px-6 md:px-12 flex justify-between items-center flex-shrink-0 bg-[#F0F3F5] z-10 border-b border-[#0C0C0C]/10">
         <Link className="brand-logo flex items-center gap-2.5 text-[22px] md:text-[24px] font-black tracking-tighter text-[#0C0C0C] whitespace-nowrap" href="/">
-          <Image src="/logo.svg" alt="REVON SOLUTIONS Logo" width={30} height={30} className="h-[26px] w-auto brightness-0 translate-y-[2px]" />
-          <span className="override-black">Revon Solutions</span>
+          <Image src="/logo.svg" alt="REVON SOLUTIONS Logo" width={30} height={30} className="h-[26px] w-auto brightness-0" />
+          <span className="override-black">REVON SOLUTIONS</span>
         </Link>
         <Link href="/" className="override-black flex items-center gap-1.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider hover:text-[#c90101] transition-colors">
           <ArrowLeft className="w-4 h-4 stroke-[2.5]" />
