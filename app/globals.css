@@ -69,11 +69,12 @@ h6,
   word-spacing: 0.08em !important;
 }
 
-/* 3. Brand Logo ('REVON SOLUTIONS') Exception: Stack Sans Notch = Space Grotesk (700 font weight, tighter letter spacing) */
+/* 3. Brand Logo ('REVON SOLUTIONS') — Stack Sans Notch */
 .brand-logo {
-  font-family: 'Space Grotesk', sans-serif !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.04em !important;
+  font-family: "Stack Sans Notch", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
   text-transform: uppercase !important;
   display: inline-flex !important;
   align-items: center !important;
