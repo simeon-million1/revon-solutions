@@ -27,7 +27,7 @@ export default function Home() {
               href="/"
             >
               <Image
-                src="/logo.svg"
+                src="/favicon.svg"
                 alt="REVON SOLUTIONS Logo"
                 width={30}
                 height={30}
@@ -252,7 +252,7 @@ export default function Home() {
           {/* Far Left: Big Logo & REVON SOLUTIONS where container starts */}
           <div className="flex items-center gap-2.5 md:gap-3">
             <Image
-              src="/logo.svg"
+              src="/favicon.svg"
               alt="REVON SOLUTIONS Logo"
               width={38}
               height={36}

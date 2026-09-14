@@ -22,22 +22,15 @@ export const metadata: Metadata = {
         height: 800,
         alt: "REVON SOLUTIONS Search Logo",
       },
-      {
-        url: "/logo.svg",
-        width: 800,
-        height: 800,
-        alt: "REVON SOLUTIONS Logo",
-      },
     ],
     locale: "en_US",
     type: "website",
   },
   icons: {
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/favicon-browser.svg", type: "image/svg+xml" },
     ],
-    shortcut: "/favicon.svg",
+    shortcut: "/favicon-browser.svg",
     apple: [
       { url: "/favicon-search.svg", type: "image/svg+xml" },
     ],
