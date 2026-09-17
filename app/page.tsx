@@ -23,7 +23,7 @@ export default function Home() {
           {/* Left: Logo */}
           <div className="flex items-center">
             <Link
-              className="brand-logo flex items-center gap-2.5 text-[22px] font-black tracking-tighter text-[#0C0C0C] whitespace-nowrap"
+              className="brand-logo flex items-center gap-1.5 text-[22px] font-black tracking-tighter text-[#0C0C0C] whitespace-nowrap"
               href="/"
             >
               <Image
@@ -250,7 +250,7 @@ export default function Home() {
       <footer className="w-full bg-background border-t border-black/10 mt-auto relative z-10">
         <div className="max-w-[1350px] mx-auto px-6 md:px-12 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Far Left: Big Logo & REVON SOLUTIONS where container starts */}
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-1.5">
             <Image
               src="/logo.svg"
               alt="REVON SOLUTIONS Logo"
