@@ -29,9 +29,9 @@ export default function Home() {
               <Image
                 src="/logo.svg"
                 alt="REVON SOLUTIONS Logo"
-                width={30}
-                height={30}
-                className="h-[24px] w-auto brightness-0"
+                width={36}
+                height={36}
+                className="h-[28px] w-auto brightness-0"
               />
               <span>REVON SOLUTIONS</span>
             </Link>
@@ -254,9 +254,9 @@ export default function Home() {
             <Image
               src="/logo.svg"
               alt="REVON SOLUTIONS Logo"
-              width={38}
+              width={36}
               height={36}
-              className="h-[24px] w-auto brightness-0"
+              className="h-[28px] w-auto brightness-0"
             />
             <span className="brand-logo text-[22px] font-black tracking-tighter text-on-surface whitespace-nowrap">
               REVON SOLUTIONS
