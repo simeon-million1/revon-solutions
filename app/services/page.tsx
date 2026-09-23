@@ -82,7 +82,7 @@ export default function ServicesPage() {
         <section className="w-full py-16 md:py-24 px-6 md:px-12 max-w-[1350px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             {services.map((service, index) => (
-              <div key={index} className="bg-white p-8 md:p-10 lg:p-12 rounded-3xl border border-black/5 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.05)] hover:-translate-y-2 hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.1)] transition-all duration-500 flex flex-col h-full">
+              <div key={index} className="bg-[#F0F3F5] p-8 md:p-10 lg:p-12 rounded-3xl border border-black/10 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04)] hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.08)] transition-all duration-500 flex flex-col h-full">
                 <div className="flex flex-col gap-3 mb-6 md:mb-8">
                   <h2 className="font-headline-md text-[28px] md:text-[32px] font-black text-[#0C0C0C] tracking-tighter leading-tight">
                     {service.title}
@@ -96,7 +96,7 @@ export default function ServicesPage() {
                   </p>
                 </div>
                 
-                <div className="mt-auto pt-6 border-t border-black/5">
+                <div className="mt-auto pt-6 border-t border-black/10">
                   <ul className="flex flex-col gap-3">
                     {service.bullets.map((bullet, idx) => (
                       <li key={idx} className="flex items-start gap-3">
@@ -112,7 +112,7 @@ export default function ServicesPage() {
         </section>
 
         {/* ───────── Final CTA Section ───────── */}
-        <section className="w-full inverted-section bg-[#F0F3F5] py-20 md:py-28 relative z-10 flex flex-col items-center justify-center overflow-hidden border-t border-white/10 shadow-2xl mt-10">
+        <section className="w-full inverted-section bg-[#F0F3F5] py-20 md:py-28 relative z-10 flex flex-col items-center justify-center overflow-hidden border-t border-black/10 shadow-2xl mt-10">
           <div className="max-w-[1350px] mx-auto text-center px-6 md:px-12 flex flex-col items-center justify-center z-10">
             <h2 className="text-[31px] md:text-[43px] lg:text-[51px] font-black text-[#0C0C0C] mb-4 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
               A Complete <span className="text-[#c90101]">Client Acquisition System</span>
@@ -121,7 +121,7 @@ export default function ServicesPage() {
               Offer → Marketing → Conversion → Sales
             </h4>
             
-            <div className="bg-white p-8 md:p-10 rounded-3xl border border-black/5 shadow-xl w-full max-w-3xl mb-10">
+            <div className="bg-[#F0F3F5] p-8 md:p-10 rounded-3xl border border-black/10 shadow-xl w-full max-w-3xl mb-10">
               <h3 className="font-headline-md text-[20px] md:text-[24px] font-bold text-[#0C0C0C] mb-6 tracking-tight text-center">
                 Built to help you:
               </h3>
