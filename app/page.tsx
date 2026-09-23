@@ -41,7 +41,7 @@ export default function Home() {
           <nav className="flex max-sm:hidden absolute left-1/2 -translate-x-1/2 items-center gap-10">
             <Link
               className="font-label-md text-[14px] md:text-[13px] font-semibold text-[#0C0C0C] hover:text-[#c90101] transition-colors tracking-widest uppercase"
-              href="#how-it-works"
+              href="/services"
             >
               Services
             </Link>
