@@ -168,7 +168,7 @@ export default function Home() {
         </section>
 
         {/* ───────── 4. Solution / Value Prop ───────── */}
-        <section id="how-it-works" className="w-full h-screen bg-[#F0F3F5] px-6 md:px-12 py-12 md:py-16 relative z-10 flex items-center">
+        <section id="how-it-works" className="w-full min-h-screen bg-[#F0F3F5] px-6 md:px-12 py-16 md:py-20 relative z-10 flex items-center">
 
           <div className="w-full max-w-[1350px] mx-auto flex flex-col">
           <div className="text-center max-w-4xl mx-auto mb-10 md:mb-14">
@@ -220,6 +220,16 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 md:mt-12 flex justify-center">
+            <Link
+              className="btn-on-light group"
+              href="/services"
+            >
+              See More
+              <ArrowRight className="ml-2.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
           </div>
         </section>
