@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function ServicesPage() {
   const services = [
@@ -64,22 +64,18 @@ export default function ServicesPage() {
 
       <main className="flex-grow relative overflow-hidden bg-[#F0F3F5]">
         
-        {/* ───────── Hero Section ───────── */}
-        <section className="w-full pt-40 pb-20 md:pt-48 md:pb-32 px-6 md:px-12 max-w-[1350px] mx-auto flex flex-col items-center text-center relative z-10">
-          <h1 className="hero-headline text-[40px] md:text-[56px] lg:text-[64px] font-extrabold text-[#0C0C0C] mb-6 max-w-4xl mx-auto tracking-tighter leading-[1.05]">
+        {/* ───────── Hero Section (Left-aligned, No CTA) ───────── */}
+        <section className="w-full pt-36 pb-12 md:pt-44 md:pb-16 px-6 md:px-12 max-w-[1350px] mx-auto flex flex-col items-start text-left relative z-10">
+          <h1 className="hero-headline text-[40px] md:text-[56px] lg:text-[64px] font-extrabold text-[#0C0C0C] mb-6 max-w-4xl tracking-tighter leading-[1.05]">
             Everything You Need to <span className="text-[#c90101]">Get More Clients.</span>
           </h1>
-          <p className="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-[#313131] max-w-2xl mx-auto mb-10">
+          <p className="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-[#313131] max-w-2xl">
             We improve your offer, bring in the right leads, and turn more of them into clients.
           </p>
-          <Link className="btn-solid-black group min-h-[46px] mx-auto" href="/form">
-            Get Your Free Strategy
-            <ArrowRight className="ml-2.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Link>
         </section>
 
         {/* ───────── Services Section ───────── */}
-        <section className="w-full py-16 md:py-24 px-6 md:px-12 max-w-[1350px] mx-auto">
+        <section className="w-full py-12 md:py-20 px-6 md:px-12 max-w-[1350px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             {services.map((service, index) => (
               <div key={index} className="bg-[#F0F3F5] p-8 md:p-10 lg:p-12 rounded-3xl border border-black/10 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04)] hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.08)] transition-all duration-500 flex flex-col h-full">
@@ -97,10 +93,10 @@ export default function ServicesPage() {
                 </div>
                 
                 <div className="mt-auto pt-6 border-t border-black/10">
-                  <ul className="flex flex-col gap-3">
+                  <ul className="flex flex-col gap-3.5">
                     {service.bullets.map((bullet, idx) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 min-w-[20px] text-[#c90101] mt-0.5" strokeWidth={2.5} />
+                      <li key={idx} className="flex items-center gap-3">
+                        <span className="w-2 h-2 rounded-full bg-[#c90101] shrink-0" />
                         <span className="font-body-md text-[16px] text-[#313131] font-semibold">{bullet}</span>
                       </li>
                     ))}
@@ -133,7 +129,7 @@ export default function ServicesPage() {
                   "Make more revenue from each client"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-3">
-                    <CheckCircle2 className="w-6 h-6 min-w-[24px] text-[#c90101]" strokeWidth={3} />
+                    <span className="w-2 h-2 rounded-full bg-[#c90101] shrink-0" />
                     <span className="font-body-lg text-[17px] md:text-[18px] font-semibold text-[#0C0C0C]">{item}</span>
                   </li>
                 ))}
