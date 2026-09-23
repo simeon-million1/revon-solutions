@@ -73,8 +73,8 @@ export default function Home() {
           <section className="h-screen max-w-[1350px] mx-auto px-6 md:px-12 flex flex-col items-center justify-center pt-36 pb-10 text-center relative z-10">
 
             <h1 className="hero-headline text-[36px] md:text-[48px] lg:text-[56px] font-extrabold text-[#0C0C0C] mb-4 md:mb-6 max-w-4xl mx-auto tracking-tighter leading-[1.08] md:leading-tight">
-            <span className="text-[#c90101]">$10K+/Month Service Businesses:</span> Get More Qualified Clients Every Month.
-          </h1>
+              Fill Your Calendar With <span className="text-[#c90101]">Qualified Appointments</span> Every Month.
+            </h1>
           <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#313131] max-w-2xl mx-auto mb-6 md:mb-8">
             Not reaching your target number of clients? We help you build a more reliable path to growth.
           </p>
