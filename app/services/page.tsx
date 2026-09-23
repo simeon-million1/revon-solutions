@@ -64,12 +64,12 @@ export default function ServicesPage() {
 
       <main className="flex-grow relative overflow-hidden bg-[#F0F3F5]">
         
-        {/* ───────── Hero Section (Left-aligned, No CTA, H2 size) ───────── */}
-        <section className="w-full pt-36 pb-12 md:pt-44 md:pb-16 px-6 md:px-12 max-w-[1350px] mx-auto flex flex-col items-start text-left relative z-10">
-          <h1 className="text-[31px] md:text-[43px] lg:text-[51px] font-black text-[#0C0C0C] mb-4 md:mb-6 max-w-4xl tracking-tighter leading-[1.1]">
+        {/* ───────── Hero Section (Centered) ───────── */}
+        <section className="w-full pt-36 pb-12 md:pt-44 md:pb-16 px-6 md:px-12 max-w-[1350px] mx-auto flex flex-col items-center text-center relative z-10">
+          <h1 className="text-[31px] md:text-[43px] lg:text-[51px] font-black text-[#0C0C0C] mb-4 md:mb-6 max-w-4xl mx-auto tracking-tighter leading-[1.1]">
             Everything You Need to <span className="text-[#c90101]">Get More Clients.</span>
           </h1>
-          <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#313131] max-w-2xl">
+          <p className="font-body-lg text-[17px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#313131] max-w-2xl mx-auto">
             We improve your offer, bring in the right leads, and turn more of them into clients.
           </p>
         </section>
@@ -104,13 +104,13 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* ───────── Final CTA Section ───────── */}
-        <section className="w-full inverted-section bg-[#F0F3F5] py-20 md:py-28 relative z-10 flex flex-col items-center justify-center overflow-hidden border-t border-black/10 shadow-2xl mt-10">
+        {/* ───────── Final CTA Section (Enhanced Whitespace) ───────── */}
+        <section className="w-full inverted-section bg-[#F0F3F5] py-28 md:py-36 lg:py-44 relative z-10 flex flex-col items-center justify-center overflow-hidden border-t border-black/10 shadow-2xl mt-16 md:mt-24">
           <div className="max-w-[1350px] mx-auto text-center px-6 md:px-12 flex flex-col items-center justify-center z-10">
-            <h2 className="text-[31px] md:text-[43px] lg:text-[51px] font-black text-[#0C0C0C] mb-4 md:mb-6 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
+            <h2 className="text-[31px] md:text-[43px] lg:text-[51px] font-black text-[#0C0C0C] mb-6 md:mb-8 tracking-tighter leading-[1.1] max-w-4xl mx-auto">
               A Complete <span className="text-[#c90101]">Client Acquisition System</span>
             </h2>
-            <h4 className="text-[17px] md:text-[18px] font-extrabold text-[#313131] tracking-widest uppercase mb-10 md:mb-12 opacity-70">
+            <h4 className="text-[17px] md:text-[18px] font-extrabold text-[#313131] tracking-widest uppercase mb-12 md:mb-16 opacity-70">
               Offer → Marketing → Conversion → Sales
             </h4>
 
